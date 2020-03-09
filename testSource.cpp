@@ -2,29 +2,43 @@
 
 int main() {
 
-	int a[100];
+	int a[101];
+	int min;
+	int minJ=1;
+	int minY=1;
+	int i = 1;
 
-	int i = 1, j = 1;
-	int max = 0;
+	int secondMin;
 
 
 	for (i = 1; i <= 9; i++) {
+
 		scanf_s("%d", &a[i]);
 	}
 
-	max = a[1];
-	//dddddddddd 
+	min = a[1];
 
 	for (i = 1; i <= 9; i++) {
-		if (max <= a[i]) {
-			max = a[i];
-			j = i;
+		if (min >= a[i]) {
+			min = a[i];
+			minJ = i;
+		}
+	}
+	a[minJ] = 9999999;
+
+	secondMin = a[1];
+	for (i = 1; i <= 9; i++) {
+
+		if (secondMin >= a[i]) {
+			secondMin = a[i];
+			minY = i;
 		}
 	}
 
-
-		printf("%d\n", max);
-		printf("%d ", j);
+	
+		printf("%d\n",secondMin);
+		printf("%d", minY);
+	
 
 
 	

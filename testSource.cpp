@@ -13,7 +13,7 @@ int main() {
 	}
 
 	max = a[1];
-	//dddddddddd
+	//dddddddddd 
 
 	for (i = 1; i <= 9; i++) {
 		if (max <= a[i]) {

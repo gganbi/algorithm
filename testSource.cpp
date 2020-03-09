@@ -33,7 +33,7 @@ int main() {
 			bb[i] = 0;
 		}else {
 			bb[i] = bb[i - 1] + 1;
-		}
+		}a
 	}
 
 	for (i = 1; i <= b; i++) {

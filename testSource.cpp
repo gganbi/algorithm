@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+/*
 int main() {
 
 	int a[101];
@@ -52,3 +52,4 @@ int main() {
 	
 	return 0;
 }
+*/

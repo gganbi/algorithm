@@ -43,9 +43,9 @@ int main() {
 	printf("%d", sum);
 
 
-	//�׽�Ʈ�����غ�
+	//Å×½ºÆ®º¯°æÇØº½
 	// firstsexond
-
+		//scodnddd
 
 
 

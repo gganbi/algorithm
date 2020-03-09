@@ -3,42 +3,46 @@
 int main() {
 
 	int a[101];
-	int min;
-	int minJ=1;
-	int minY=1;
+	int bb[101];
+	int tmp=0;
+	int b;
+	int sum = 0;
+
 	int i = 1;
 
 	int secondMin;
 
-
-	for (i = 1; i <= 9; i++) {
+	scanf_s("%d", &b);
+	for (i = 1; i <= b; i++) {
 
 		scanf_s("%d", &a[i]);
 	}
 
-	min = a[1];
+	for (i = 1; i <= b; i++) {
 
-	for (i = 1; i <= 9; i++) {
-		if (min >= a[i]) {
-			min = a[i];
-			minJ = i;
-		}
-	}
-	a[minJ] = 9999999;
-
-	secondMin = a[1];
-	for (i = 1; i <= 9; i++) {
-
-		if (secondMin >= a[i]) {
-			secondMin = a[i];
-			minY = i;
-		}
+		bb[i] = 0;
 	}
 
-	
-		printf("%d\n",secondMin);
-		printf("%d", minY);
-	
+	if (a[1] == 1) {
+		bb[1] = 1;
+	}
+
+	for (i = 2; i <= b; i++) {
+
+		if (a[i ] == 0) {
+			bb[i] = 0;
+		}else {
+			bb[i] = bb[i - 1] + 1;
+		}
+	}
+
+	for (i = 1; i <= b; i++) {
+		sum += bb[i];
+	}
+
+	printf("%d", sum);
+
+
 
 
 	

@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+/*
 int main() {
 
 	int aa[101][101];
@@ -88,3 +88,4 @@ int main() {
 
 	return 0;
 }
+*/

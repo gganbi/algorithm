@@ -146,6 +146,7 @@
     <ClCompile Include="string2.cpp" />
     <ClCompile Include="string3.cpp" />
     <ClCompile Include="string4.cpp" />
+    <ClCompile Include="string5.cpp" />
     <ClCompile Include="stringChagne.cpp" />
     <ClCompile Include="testSource.cpp" />
   </ItemGroup>

@@ -1,14 +1,8 @@
 #include<stdio.h>
-
+/*
 int main() {
 
-	int aa[101][101] = {0};
-
-	int i = 0, j = 0;
-	int a = 0,b=0;
-	int count = 1;
-	int c, d;
-
+	char a[100];
 
 	scanf_s("%d", &a);
 	scanf_s("%d", &b);
@@ -33,3 +27,4 @@ int main() {
 
 	return 0;
 }
+*/

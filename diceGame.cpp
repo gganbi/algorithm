@@ -2,59 +2,71 @@
 
 int main() {
 
-	int aa[1001][4];
-	int bb[1001];
+	int aa[101][101] = {0};
 
 	int i = 0, j = 0;
 	int a = 0;
+	int b = 0;
 	int max = 0;
 	scanf_s("%d", &a);
+	scanf_s("%d", &b);
 
 	for (i = 1; i <= a; i++) {
-		scanf_s("%d", &aa[i][1]);
-		scanf_s("%d", &aa[i][2]);
-		scanf_s("%d", &aa[i][3]);	
-
-		if (aa[i][1] == aa[i][2] && aa[i][2] == aa[i][3]) {
-			bb[i] = 10000 + aa[i][1] * 1000;
-		}
-		else if (aa[i][1] != aa[i][2] && aa[i][2] != aa[i][3]
-			&& aa[i][1] != aa[i][3]) {
-			
-			int maxx = aa[i][1];
-			for (j = 2; j <= 3; j++) {
-				if (maxx <= aa[i][j]) {
-					maxx = aa[i][j];
+	
+		if (i % 2 == 0) {  //¦
+			for (j = 1; j <= a - i; j++) {
+		
+				aa[i][j] = 0;
+		
+				
+			}
+			for (j = a - i + 1; j <= a + i - 1; j++) {
+				if (b == 10) {
+					b = 1;
 				}
+				aa[i][j] = b;
+				b++;
+			
 			}
-			bb[i] = maxx * 100;
+			for (j = a +i ; j <= 2*a-1; j++) {
+			
+				aa[i][j] = 0;
+			
+			}
+			
 		}
-		else {
+		else {  //Ȧ
 
-			if (aa[i][1] == aa[i][2]) {
-				bb[i] = 1000 + aa[i][2] * 100;
+			for (j = 2*a-1; j >= a + i; j--) {
+			
+				aa[i][j] = 0;
+			
+
 			}
-			else if (aa[i][2] == aa[i][3]) {
-				bb[i] = 1000 + aa[i][2] * 100;
+			for (j = a + i - 1; j >= a - i + 1; j--) {
+				if (b == 10) {
+					b = 1;
+				}
+				aa[i][j] = b;
+				b++;
+
 			}
-			else {
-				bb[i] = 1000 + aa[i][1] * 100;
+			for (j = a - i; j >= 1; j--) {
+			
+				aa[i][j] = 0;
+			
 			}
+			
 		}
+		for (i = 1; i <= a; i++) {
+			for (j = 1; j <= 2 * a - 1; j++) {
+				printf("%d", aa[i][j]);
+			}printf("\n");
+		}
+	
 	}
 
-	 max = bb[1];
-
-	for (j = 2; j <= a; j++) {
-		if (max <= bb[j]) {
-			max = bb[j];
-		}
-	}
-
-		printf("%d", max);
 	
-	
-
 
 
 

@@ -139,11 +139,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="array1.cpp" />
+    <ClCompile Include="array2.cpp" />
     <ClCompile Include="array3.cpp" />
     <ClCompile Include="cardGame.cpp" />
     <ClCompile Include="diceGame.cpp" />
     <ClCompile Include="testSource.cpp" />
-    <ClCompile Include="소스.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,4 +1,4 @@
-﻿  string3.cpp
-C:\Users\김성민\source\repos\Test\Project1\string3.cpp(7,7): warning C4101: 'b' :참조되지 않은 지역 변수입니다.
-C:\Users\김성민\source\repos\Test\Project1\string3.cpp(8,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+﻿  string4.cpp
+C:\Users\김성민\source\repos\Test\Project1\string4.cpp(7,7): warning C4101: 'b' :참조되지 않은 지역 변수입니다.
+C:\Users\김성민\source\repos\Test\Project1\string4.cpp(8,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
   Project1.vcxproj -> C:\Users\김성민\source\repos\Test\Debug\Project1.exe

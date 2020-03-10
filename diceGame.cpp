@@ -2,18 +2,18 @@
 
 int main() {
 
-	int aa[101][101] = {0};
+	int aa[101][101];
 
 	int i = 0, j = 0;
 	int a = 0;
 	int b = 0;
-	int max = 0;
+
 	scanf_s("%d", &a);
 	scanf_s("%d", &b);
 
 	for (i = 1; i <= a; i++) {
 	
-		if (i % 2 == 0) {  //¦
+		if (i % 2 == 0) {  //짝
 			for (j = 1; j <= a - i; j++) {
 		
 				aa[i][j] = 0;
@@ -35,7 +35,7 @@ int main() {
 			}
 			
 		}
-		else {  //Ȧ
+		else {  //홀
 
 			for (j = 2*a-1; j >= a + i; j--) {
 			
@@ -58,12 +58,28 @@ int main() {
 			}
 			
 		}
-		for (i = 1; i <= a; i++) {
-			for (j = 1; j <= 2 * a - 1; j++) {
-				printf("%d", aa[i][j]);
-			}printf("\n");
+	}
+
+	for (i = 1; i <= a; i++) {
+		for (j = 1; j <= a - i; j++) {
+
+			printf(" ");
+
+
 		}
-	
+		for (j = a - i + 1; j <= a + i - 1; j++) {
+			
+			printf("%d", aa[i][j]);
+
+		}
+		for (j = a + i; j <= 2 * a - 1; j++) {
+
+			printf(" ");
+
+		}
+
+		printf("\n");
+
 	}
 
 	

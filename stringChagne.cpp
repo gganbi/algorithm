@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+/*
 int main() {
 
 	char a[10000];
@@ -24,3 +24,4 @@ int main() {
 
 	return 0;
 }
+*/

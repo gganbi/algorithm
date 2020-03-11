@@ -142,6 +142,7 @@
     <ClCompile Include="array2.cpp" />
     <ClCompile Include="array3.cpp" />
     <ClCompile Include="cardGame.cpp" />
+    <ClCompile Include="corse3Chess.cpp" />
     <ClCompile Include="cource3macofarr.cpp" />
     <ClCompile Include="diceGame.cpp" />
     <ClCompile Include="eightnine.cpp" />

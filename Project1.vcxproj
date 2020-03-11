@@ -143,6 +143,8 @@
     <ClCompile Include="array3.cpp" />
     <ClCompile Include="cardGame.cpp" />
     <ClCompile Include="diceGame.cpp" />
+    <ClCompile Include="eightnine.cpp" />
+    <ClCompile Include="lever3car.cpp" />
     <ClCompile Include="string2.cpp" />
     <ClCompile Include="string3.cpp" />
     <ClCompile Include="string4.cpp" />

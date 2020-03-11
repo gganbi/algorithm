@@ -16,17 +16,17 @@
 //    }
 //    for (int i = 0; i < a - 1; i++)
 //    {
-//        //Áß¿ä
+//        //ì¤‘ìš”
 //        indexMin = i;
 //        for (int j = i + 1; j < a; j++)
 //        {
 //            if (data[j] < data[indexMin])
-//            {    //data[indexMin]À» ±âÁØÀ¸·Î data[j]¸¦ °Ë»çÇÑ´Ù.
-//                //data[indexMin]ÀÇ °ª º¸´Ù ÀÛÀº °ªÀ» ¹ß°ß½Ã indexMin = j°¡ µÈ´Ù.
+//            {    //data[indexMin]ì„ ê¸°ì¤€ìœ¼ë¡œ data[j]ë¥¼ ê²€ì‚¬í•œë‹¤.
+//                //data[indexMin]ì˜ ê°’ ë³´ë‹¤ ìž‘ì€ ê°’ì„ ë°œê²¬ì‹œ indexMin = jê°€ ëœë‹¤.
 //                indexMin = j;
 //            }
 //        }
-//        //³»ºÎ for¹®ÀÇ ¹Ýº¹À¸·Î °¡Àå ÀÛÀº °ªÀ» Ã£À¸¸é ¼ø¼­¸¦ ¹Ù²Û´Ù.
+//        //ë‚´ë¶€ forë¬¸ì˜ ë°˜ë³µìœ¼ë¡œ ê°€ìž¥ ìž‘ì€ ê°’ì„ ì°¾ìœ¼ë©´ ìˆœì„œë¥¼ ë°”ê¾¼ë‹¤.
 //        temp = data[indexMin];
 //        data[indexMin] = data[i];
 //        data[i] = temp;
@@ -42,5 +42,3 @@
 //
 //	return 0;
 //}
-//
-//

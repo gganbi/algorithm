@@ -142,8 +142,10 @@
     <ClCompile Include="array2.cpp" />
     <ClCompile Include="array3.cpp" />
     <ClCompile Include="cardGame.cpp" />
+    <ClCompile Include="cource3macofarr.cpp" />
     <ClCompile Include="diceGame.cpp" />
     <ClCompile Include="eightnine.cpp" />
+    <ClCompile Include="level3Box.cpp" />
     <ClCompile Include="lever3car.cpp" />
     <ClCompile Include="lever3offset.cpp" />
     <ClCompile Include="string2.cpp" />
@@ -151,6 +153,7 @@
     <ClCompile Include="string4.cpp" />
     <ClCompile Include="string5.cpp" />
     <ClCompile Include="stringChagne.cpp" />
+    <ClCompile Include="test.cpp" />
     <ClCompile Include="testSource.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

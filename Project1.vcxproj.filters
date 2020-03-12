@@ -81,5 +81,11 @@
     <ClCompile Include="factorialBinary.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="nextnum.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="classpresident.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

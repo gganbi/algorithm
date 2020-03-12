@@ -69,5 +69,17 @@
     <ClCompile Include="corse3Chess.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="course3Aattackrange.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stringPressior.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="level3BoxMaing.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="factorialBinary.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

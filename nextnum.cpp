@@ -11,7 +11,7 @@ int main() {
 		scanf_s("%d", &data[i][1]);
 		scanf_s("%d", &data[i][2]);
 		scanf_s("%d", &data[i][3]);
-		
+
 		if (data[i][1] == 0 && data[i][2] == 0
 			&& data[i][3] == 0) {
 			break;
@@ -29,7 +29,7 @@ int main() {
 		else {
 			printf("GP %d\n", data[j][3] * (data[j][3] / data[j][2]));
 		}
-	
+
 	}
 
 

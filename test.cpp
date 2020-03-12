@@ -1,40 +1,25 @@
-//#include <stdio.h>
+//#include<stdio.h>
 //
+//int sum[100];
+//
+//void  fibo(int a) {
+//
+//	if (a == 2) {
+//		return;
+//	}
+//
+//	fibo(a - 1);
+//	sum[a] = sum[a - 1] + sum[a - 2];
+//}
 //
 //int main() {
 //
+//	sum[1] = 0;
+//	sum[2] = 1;
+//	int a;
+//	scanf_s("%d", &a);
 //
-//	int data[1000][4];
-//	int i = 1;
-//
-//	while (true) {
-//		scanf_s("%d", &data[i][1]);
-//		scanf_s("%d", &data[i][2]);
-//		scanf_s("%d", &data[i][3]);
-//		
-//		if (data[i][1] == 0 && data[i][2] == 0
-//			&& data[i][3] == 0) {
-//			break;
-//		}
-//		i++;
-//
-//	}
-//
-//	for (int j = 1; j < i; j++) {
-//
-//		if ((data[j][3] - data[j][2]) ==
-//			(data[j][2] - data[j][1])) {
-//			printf("AP %d\n", data[j][3] + (data[j][3] - data[j][2]));
-//		}
-//		else {
-//			printf("GP %d\n", data[j][3] * (data[j][3] / data[j][2]));
-//		}
-//	
-//	}
+//	printf("%d", sum[a]);
 //
 //
-//
-//
-//
-//	return 0;
 //}

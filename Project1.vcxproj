@@ -149,6 +149,7 @@
     <ClCompile Include="diceGame.cpp" />
     <ClCompile Include="eightnine.cpp" />
     <ClCompile Include="factorialBinary.cpp" />
+    <ClCompile Include="fibonacci.cpp" />
     <ClCompile Include="level3Box.cpp" />
     <ClCompile Include="level3BoxMaing.cpp" />
     <ClCompile Include="lever3car.cpp" />

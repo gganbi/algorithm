@@ -1,39 +1,63 @@
 //#include<stdio.h>
-//#include<string.h>
 //
-//int main() {
+//void sort(int a[]) {
 //
-//	//Please Enter Your Code Here
-//	int a;
-//	char b[110][110];
-//	char temp[110];
-//	int indexMin = 0;
+//	int min = a[1];
 //
+//	int temp;
 //
-//	scanf_s("%d", &a);
-//
-//
-//	for (int i = 1; i <= a; i++) {
-//
-//		scanf_s(" %s", b[i], 110);
-//	}
-//
-//	for (int i = 1; i < a; i++) {
-//
-//		for (int j = i + 1; j <= a; j++) {
-//			if (strcmp(b[i], b[j]) > 0) {
-//				strcpy_s(temp, b[i]);
-//				strcpy_s(b[i], b[j]);
-//				strcpy_s(b[j], temp);
-//				
+//	for (int i = 1; i < 9; i++) {
+//		for (int j = i + 1; j < 10; j++) {
+//			if (a[i] > a[j]) {
+//				temp = a[i];
+//				a[i] = a[j];
+//				a[j] = temp;
 //			}
 //		}
-//		
 //	}
 //
-//	for (int i = 1; i <= a; i++) {
-//		printf("%s\n", b[i]);
+//}
+//
+//int main() {
+//	
+//	long long int a;
+//	long long int  b;
+//	long long int min = 1;
+//	long long int max = 1;
+//	scanf_s("%lld", &a);
+//	scanf_s("%lld", &b);
+//
+//	if (a > b) {
+//		if (a % b == 0) {
+//			min = a;
+//		}
+//		else {
+//			for (long long int i = 1; i <= b; i++) {
+//				if (a % i == 0 && b % i == 0) {
+//					max = i;
+//					min = max * (a / max) * (b / max);
+//				}
+//			}
+//		}	
+//	}
+//	else {
+//		if (b % a == 0) {
+//			min = b;
+//		}
+//		else {
+//			for (long long int i = 1; i <= a; i++) {
+//				if (a % i == 0 && b % i == 0) {
+//					max = i;
+//					min = max * (a / max) * (b / max);
+//				}
+//			}
+//		}
 //	}
 //
-//	return 0;
+//	printf("%d", min);
+//	
+//
+//
+//
+//	
 //}

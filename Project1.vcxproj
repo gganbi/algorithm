@@ -155,6 +155,7 @@
     <ClCompile Include="lever3car.cpp" />
     <ClCompile Include="lever3offset.cpp" />
     <ClCompile Include="nextnum.cpp" />
+    <ClCompile Include="prosject.cpp" />
     <ClCompile Include="string2.cpp" />
     <ClCompile Include="string3.cpp" />
     <ClCompile Include="string4.cpp" />

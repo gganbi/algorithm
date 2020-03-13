@@ -4,8 +4,8 @@ int main() {
 
 	int n;
 	int x, y, index;
-	int data[120][120] = { 0, };
 
+	int data[500][500] = { 0, };
 	scanf_s("%d", &n);
 	scanf_s("%d", &x);
 	scanf_s("%d", &y);
@@ -19,11 +19,34 @@ int main() {
 	}
 
 
+	int sang = x-1;
+	int ha = n - x;
+	int ja = y - 1;
+	int wo = n - y;
+
+	if (x - 1 >= index) {
+		sang = index;
+	}
+
+	if (n-x>= index) {
+		ha = index;
+	}
+
+	if (y - 1 >= index) {
+		ja = index;
+	}
+
+	if (n - y >= index) {
+		wo = index;
+	}
+	
+
+
 	// 좌로직
-	for (int i = 0; i <= index; i++) {
+	for (int i = 0; i <= ja; i++) {
 
 		int temp1 = i;
-		for (int j = 0; j <= index; j++) {
+		for (int j = 0; j <= sang; j++) {
 
 			if (data[x - j][y - i] == 100) {
 				break;
@@ -36,9 +59,9 @@ int main() {
 			}
 		}
 
-		//하
+	//	하
 		int temp2 = i;
-		for (int j = 0; j <= index; j++) {
+		for (int j = 0; j <= ha; j++) {
 
 			if (data[x + j][y - i] == 100) {
 				break;
@@ -53,10 +76,10 @@ int main() {
 	}
 
 	// 우로직
-	for (int i = 0; i <= index; i++) {
+	for (int i = 0; i <= wo; i++) {
 
 		int temp1 = i;
-		for (int j = 0; j <= index; j++) {
+		for (int j = 0; j <= sang; j++) {
 
 			if (data[x - j][y + i] == 100) {
 				break;
@@ -70,7 +93,7 @@ int main() {
 
 		//하
 		int temp2 = i;
-		for (int j = 0; j <= index; j++) {
+		for (int j = 0; j <= ha; j++) {
 
 			if (data[x + j][y + i] == 100) {
 				break;

@@ -1,47 +1,55 @@
 //#include<stdio.h>
 //#include<string.h>
+//#include<stdlib.h>
 //
 //int main() {
 //
-//	char str[1010];
-//	char str2[1010];
-//	
-//	fgets(str, sizeof(str), stdin);
+//	char data[1010];
+//	char  tmp[1010] = {0,};
+//	char tmpCnt = 0;
+//	char indexCnt = 1;
 //
-//	int tempCount = 1;
-//	int str2Count = 0;
 //
-//	for (int i = 0; i < strlen(str); i++) {
-//		if (str[i + 1] == '\n') {
+//	fgets(data, 1010, stdin);
 //
-//			if (tempCount == 1) {
-//				str2[str2Count++] = str[i];
-//			}
-//			else {
-//				str2[str2Count++] = (char)tempCount;
-//				str2[str2Count++] = str[i];
-//			}
-//			
-//			break;
-//		}
-//		else if (str[i] == str[i+1]) {
-//			tempCount++;
+//
+//	for (int i = 0; i < strlen(data) - 2; i++) {
+//		if (data[i + 1] == data[i]) {
+//			indexCnt++;
 //		}
 //		else {
-//			if (tempCount == 1) {
-//				str2[str2Count++] = str[i];
+//
+//			if (indexCnt == 1) {
+//				tmp[tmpCnt++] = data[i];
 //			}
 //			else {
-//				str2[str2Count++] = (char)tempCount;
-//				str2[str2Count++] = str[i];
+//				if (indexCnt / 10 ==0) {
+//					tmp[tmpCnt++] = indexCnt + '0';
+//				}
+//				else if(indexCnt / 10 < 10) {
+//					tmp[tmpCnt++] = indexCnt / 10 + '0';
+//					tmp[tmpCnt++] = indexCnt%10 + '0';
+//				}
+//				else {
+//					tmp[tmpCnt++] = indexCnt / 100 + '0';
+//					tmp[tmpCnt++] = indexCnt % 100/10 + '0';
+//					tmp[tmpCnt++] = indexCnt % 100 % 10 + '0';
+//				}
+//
+//				
+//				tmp[tmpCnt++] = data[i];
 //			}
-//			
+//			indexCnt = 1;
 //		}
 //	}
-//	for (int i = 0; str2[i] != '\n'; i++) {
-//		printf("%c", str2[i]);
-//	
+//
+//
+//	for (int i = 0; i < tmpCnt; i++) {
+//		printf("%c", tmp[i]);
 //	}
+//
+//
+//
 //
 //	return 0;
 //}

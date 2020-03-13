@@ -60,9 +60,6 @@
     <ClCompile Include="level3Box.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="test.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="cource3macofarr.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -88,6 +85,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="fibonacci.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

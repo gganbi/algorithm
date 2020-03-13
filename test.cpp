@@ -1,25 +1,39 @@
 //#include<stdio.h>
-//
-//int sum[100];
-//
-//void  fibo(int a) {
-//
-//	if (a == 2) {
-//		return;
-//	}
-//
-//	fibo(a - 1);
-//	sum[a] = sum[a - 1] + sum[a - 2];
-//}
+//#include<string.h>
 //
 //int main() {
 //
-//	sum[1] = 0;
-//	sum[2] = 1;
+//	//Please Enter Your Code Here
 //	int a;
+//	char b[110][110];
+//	char temp[110];
+//	int indexMin = 0;
+//
+//
 //	scanf_s("%d", &a);
 //
-//	printf("%d", sum[a]);
 //
+//	for (int i = 1; i <= a; i++) {
 //
+//		scanf_s(" %s", b[i], 110);
+//	}
+//
+//	for (int i = 1; i < a; i++) {
+//
+//		for (int j = i + 1; j <= a; j++) {
+//			if (strcmp(b[i], b[j]) > 0) {
+//				strcpy_s(temp, b[i]);
+//				strcpy_s(b[i], b[j]);
+//				strcpy_s(b[j], temp);
+//				
+//			}
+//		}
+//		
+//	}
+//
+//	for (int i = 1; i <= a; i++) {
+//		printf("%s\n", b[i]);
+//	}
+//
+//	return 0;
 //}

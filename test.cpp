@@ -1,63 +1,68 @@
-//#include<stdio.h>
-//
-//void sort(int a[]) {
-//
-//	int min = a[1];
-//
-//	int temp;
-//
-//	for (int i = 1; i < 9; i++) {
-//		for (int j = i + 1; j < 10; j++) {
-//			if (a[i] > a[j]) {
-//				temp = a[i];
-//				a[i] = a[j];
-//				a[j] = temp;
-//			}
-//		}
-//	}
-//
-//}
-//
-//int main() {
-//	
-//	long long int a;
-//	long long int  b;
-//	long long int min = 1;
-//	long long int max = 1;
-//	scanf_s("%lld", &a);
-//	scanf_s("%lld", &b);
-//
-//	if (a > b) {
-//		if (a % b == 0) {
-//			min = a;
-//		}
-//		else {
-//			for (long long int i = 1; i <= b; i++) {
-//				if (a % i == 0 && b % i == 0) {
-//					max = i;
-//					min = max * (a / max) * (b / max);
-//				}
-//			}
-//		}	
-//	}
-//	else {
-//		if (b % a == 0) {
-//			min = b;
-//		}
-//		else {
-//			for (long long int i = 1; i <= a; i++) {
-//				if (a % i == 0 && b % i == 0) {
-//					max = i;
-//					min = max * (a / max) * (b / max);
-//				}
-//			}
-//		}
-//	}
-//
-//	printf("%d", min);
-//	
-//
-//
-//
-//	
-//}
+#include<stdio.h>
+
+
+
+int main() {
+
+	int n, q;
+	int data[1000] = { 0, };
+
+	int tempN[1000] = { 0, };
+	int tempY[1000] = { 0, };
+
+	scanf_s("%d %d", &n, &q);
+
+	for (int i = 0; i < n; i++) {
+		scanf_s("%d", &data[i]);
+	}
+
+	for (int i = 0; i < q; i++) {
+		scanf_s("%d %d", &tempN[i], &tempY[i]);
+	}
+	int tempIndex = 0;
+	for (int i = 0; i < q; i++) {
+
+		if (tempY[i] > n) {
+			tempY[i] %= n;
+		}
+
+		if (tempN[i] == 1) {
+
+			int tempIndex2 = 0;
+			for (int j = 1; j <= tempY[i]; j++) {
+				if (tempIndex + j > n - 1) {
+					tempIndex = 0;
+					tempIndex2 = 0;
+				}
+				else {
+					tempIndex2++;
+				}
+			}
+			tempIndex += tempIndex2;
+
+		}
+		else {
+			int tempIndex2 = 0;
+			for (int j = 1; j <= tempY[i]; j++) {
+				if (tempIndex - j < 0) {
+					tempIndex = n - 1;
+					tempIndex2 = 0;
+				}
+				else {
+					tempIndex2++;
+				}
+			}
+			tempIndex -= tempIndex2;
+
+		}
+		printf("%d\n", data[tempIndex]);
+	}
+
+
+
+
+
+
+
+
+}

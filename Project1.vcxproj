@@ -164,6 +164,7 @@
     <ClCompile Include="stringChagne.cpp" />
     <ClCompile Include="stringPressior.cpp" />
     <ClCompile Include="test.cpp" />
+    <ClCompile Include="test2.cpp" />
     <ClCompile Include="testSource.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

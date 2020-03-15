@@ -1,38 +1,54 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main() {
+	int n, q;
+	int data[101] = {0,};
 
-	int n;
+	int aa[101] = { 0, };
+	int bb[101] = { 0, };
+
 	scanf_s("%d", &n);
+	scanf_s("%d", &q);
 
-	int data[101];
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i <n; i++) {
 		scanf_s("%d", &data[i]);
 	}
-
-	int a, b;
-	scanf_s("%d %d", &a, &b);
-
-	if (b >= n); {
-		b %= n;
+	for (int i = 0; i < q; i++) {
+		scanf_s("%d %d", &aa[i], &bb[i]);
 	}
+	int index = 0;
+	for (int i = 0; i < q; i++) {
+		
+		if (bb[i] / n >= 1) {
+			bb[i] %= n;
+		}
+		if (aa[i] == 1) {
+			if (index + bb[i] > n - 1) {
+				index = bb[i]-(n-1-index)-1;
+			}
+			else {
+				index += bb[i];
+			}
 
-	int index = a;
-	int temp = a;;
-	//for (int i = 1; i <= b; i++) {
-		if (a - b < 0) {
-			index = n+(a - b);
+			printf("%d\n", data[index]);
 		}
 		else {
-			index -= b;
+			if (index - bb[i] < 0) {
+				index = n +(index - bb[i]);
+			}
+			else {
+				index -= bb[i];
+			}
+			printf("%d\n", data[index]);
+		
 		}
 		
-		printf("%d", data[index]);
-	//}
-	
+	}
+
+
 
 
 	return 0;
+
+
 }
-
-

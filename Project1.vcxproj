@@ -143,6 +143,7 @@
     <ClCompile Include="array3.cpp" />
     <ClCompile Include="cardGame.cpp" />
     <ClCompile Include="classpresident.cpp" />
+    <ClCompile Include="colorpaper.cpp" />
     <ClCompile Include="corse3Chess.cpp" />
     <ClCompile Include="cource3macofarr.cpp" />
     <ClCompile Include="course3Aattackrange.cpp" />
@@ -150,12 +151,14 @@
     <ClCompile Include="eightnine.cpp" />
     <ClCompile Include="factorialBinary.cpp" />
     <ClCompile Include="fibonacci.cpp" />
+    <ClCompile Include="fractionsum.cpp" />
     <ClCompile Include="level3Box.cpp" />
     <ClCompile Include="level3BoxMaing.cpp" />
     <ClCompile Include="lever3car.cpp" />
     <ClCompile Include="lever3offset.cpp" />
     <ClCompile Include="nextnum.cpp" />
     <ClCompile Include="prosject.cpp" />
+    <ClCompile Include="represttValue.cpp" />
     <ClCompile Include="string2.cpp" />
     <ClCompile Include="string3.cpp" />
     <ClCompile Include="string4.cpp" />

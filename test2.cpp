@@ -1,67 +1,106 @@
-//#include<stdio.h>
-//
-//
+//#include <stdio.h>
 //
 //int main() {
 //
-//	int n,m, q;
-//	int data[101];
+//	int n, m,q;
+//	int data[200][200];
 //
-//	int tempN[101] = { 0, };
-//	int tempY[101] = { 0, };
 //
-//	scanf_s("%d %d", &n, &q);
+//	int aa[1001] = {0,};
+//	int bb[1001] = {0,};
 //
-//	for (int i = 0; i < n; i++) {
-//		scanf_s("%d", &data[i]);
-//	}
 //
-//	for (int i = 0; i < q; i++) {
-//		scanf_s("%d %d", &tempN[i], &tempY[i]);
-//	}
-//	int tempIndex = 0;
-//	for (int i = 0; i < q; i++) {
 //
-//		if (tempY[i] > n) {
-//			tempY[i] %= n;
-//		}
+//	scanf_s("%d %d %d",&n,&m,&q);
 //
-//		if (tempN[i] == 1) {
 //
-//			int tempIndex2 = 0;
-//			for (int j = 1; j <= tempY[i]; j++) {
-//				if (tempIndex + j > n - 1) {
-//					tempIndex = 0;
-//					tempIndex2 = 0;
-//				}
-//				else {
-//					tempIndex2++;
-//				}
-//			}
-//			tempIndex += tempIndex2;
-//			printf("%d\n", data[tempIndex]);
-//		}
-//		else {
-//			int tempIndex2 = 0;
-//			for (int j = 1; j <= tempY[i]; j++) {
-//				if (tempIndex - j < 0) {
-//					tempIndex = n - 1;
-//					tempIndex2 = 0;
-//				}
-//				else {
-//					tempIndex2++;
-//				}
-//			}
-//			tempIndex -= tempIndex2;
-//			printf("%d\n", data[tempIndex]);
+//	for (int i = 1; i <= n; i++) {
+//		for (int j = 1; j <= m; j++) {
+//			scanf_s("%d", &data[i][j]);
 //		}
 //	}
 //
+//	for (int i = 1; i <= q; i++) {
+//		scanf_s("%d %d",&aa[i], &bb[i]);
+//	}
+//
+//	//int y, x, d, r;
+//
+//	//scanf_s("%d %d %d %d", &y, &x, &d, &r);
+//
+//	//for (int i = 0; i <= n + 1; i++) {
+//	//	data[i][0] = -1;
+//	//	data[i][m + 1] = -1;
+//	//}
+//
+//	//for (int i = 0; i <= m + 1; i++) {
+//	//	data[0][i] = -1;
+//	//	data[n + 1][i] = -1;
+//
+//	//}
 //
 //
 //
+//	//y += 1;
+//	//x += 1;
+//
+//	//bool tmp = false;
+//	//if (d == 0) {
 //
 //
+//	//	for (int i = 1; i <= r; i++) {
+//	//		if (data[y][x +i] == -1) {
+//	//			printf("%d", data[y][x + i - 1]);
+//	//			tmp = true;
+//	//			break;
+//	//		}
+//	//	}
+//	//	if (tmp == false) {
+//	//		printf("%d", data[y][x + r]);
+//	//	}
+//	//
+//	//}
+//	//else if (d == 1) {
+//	//	for (int i = 1; i <= r; i++) {
+//	//		if (data[y][x - i] == -1) {
+//	//			printf("%d", data[y][x - i + 1]);
+//	//			tmp = true;
+//	//			break;
+//	//		}
+//	//	}
+//	//	if (tmp == false) {
+//	//		printf("%d", data[y][x - r]);
+//	//	}
 //
+//	//	//printf("%d", data[y][x - r]);
+//	//}
+//	//else if (d == 2) {
 //
+//	//	for (int i = 1; i <= r; i++) {
+//	//		if (data[y + i][x] == -1) {
+//	//			printf("%d", data[y + i - 1][x]);
+//	//			tmp = true;
+//	//			break;
+//	//		}
+//	//	}
+//	//	if (tmp == false) {
+//	//		printf("%d", data[y + r][x]);
+//	//	}
+//	//	//printf("%d", data[y+r][x]);
+//	//}
+//	//else {
+//	//	for (int i = 1; i <= r; i++) {
+//	//		if (data[y - i][x] == -1) {
+//	//			printf("%d", data[y - i + 1][x]);
+//	//			tmp = true;
+//	//			break;
+//	//		}
+//	//	}
+//	//	if (tmp == false) {
+//	//		printf("%d", data[y - r][x]);
+//	//	}
+//	//	}
+//
+//	return 0;
 //}
+//

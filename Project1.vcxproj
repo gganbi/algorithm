@@ -165,6 +165,7 @@
     <ClCompile Include="string5.cpp" />
     <ClCompile Include="stringadd.cpp" />
     <ClCompile Include="stringChagne.cpp" />
+    <ClCompile Include="stringMinus.cpp" />
     <ClCompile Include="stringPressior.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="test2.cpp" />

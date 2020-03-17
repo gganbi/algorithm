@@ -156,6 +156,7 @@
     <ClCompile Include="level3BoxMaing.cpp" />
     <ClCompile Include="lever3car.cpp" />
     <ClCompile Include="lever3offset.cpp" />
+    <ClCompile Include="mine.cpp" />
     <ClCompile Include="nextnum.cpp" />
     <ClCompile Include="prosject.cpp" />
     <ClCompile Include="represttValue.cpp" />

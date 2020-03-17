@@ -141,6 +141,7 @@
     <ClCompile Include="array1.cpp" />
     <ClCompile Include="array2.cpp" />
     <ClCompile Include="array3.cpp" />
+    <ClCompile Include="beehive.cpp" />
     <ClCompile Include="cardGame.cpp" />
     <ClCompile Include="classpresident.cpp" />
     <ClCompile Include="colorpaper.cpp" />

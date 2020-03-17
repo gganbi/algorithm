@@ -145,6 +145,8 @@
     <ClCompile Include="cardGame.cpp" />
     <ClCompile Include="classpresident.cpp" />
     <ClCompile Include="colorpaper.cpp" />
+    <ClCompile Include="combinational.cpp" />
+    <ClCompile Include="combinationzero.cpp" />
     <ClCompile Include="corse3Chess.cpp" />
     <ClCompile Include="cource3macofarr.cpp" />
     <ClCompile Include="course3Aattackrange.cpp" />

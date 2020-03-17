@@ -132,5 +132,11 @@
     <ClCompile Include="stringInclude.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="combinational.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="combinationzero.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

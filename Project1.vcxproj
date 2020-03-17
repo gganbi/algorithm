@@ -156,6 +156,8 @@
     <ClCompile Include="level3BoxMaing.cpp" />
     <ClCompile Include="lever3car.cpp" />
     <ClCompile Include="lever3offset.cpp" />
+    <ClCompile Include="matrix1.cpp" />
+    <ClCompile Include="matrix2.cpp" />
     <ClCompile Include="mine.cpp" />
     <ClCompile Include="nextnum.cpp" />
     <ClCompile Include="prosject.cpp" />
@@ -167,6 +169,7 @@
     <ClCompile Include="stringadd.cpp" />
     <ClCompile Include="stringChagne.cpp" />
     <ClCompile Include="stringMinus.cpp" />
+    <ClCompile Include="stringMultiple.cpp" />
     <ClCompile Include="stringPressior.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="test2.cpp" />

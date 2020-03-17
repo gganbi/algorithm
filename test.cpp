@@ -40,6 +40,7 @@
 //			}
 //		}
 //		sum += data[x][y];
+//		data[x][y] = 0;
 //		//회전수열 정보
 //		scanf_s("%d", &k);
 //		for (int j = 0; j < k; j++) {
@@ -62,32 +63,20 @@
 //			int temp = 0;
 //			int temp2 = 0;
 //			if (dataA[j] == 1) { //우측인경우
-//				
-//				for (int b = 1; b <= dataB[j]; b++) {
-//					if (tempIndex + dataB[j] > k - 1) {
-//						tempIndex = 0;
-//						temp = 0;
-//					}
-//					else {
-//						temp++;
-//					}
+//				if (tempIndex + dataB[j] > k - 1) {
+//					tempIndex = dataB[j] - k + tempIndex;
 //				}
-//				tempIndex += temp;
-//				//dataK[tempIndex] 이놈만큼 이동시켜줌
-//
+//				else {
+//					tempIndex += dataB[j];
+//				}
 //			}
 //			else { //좌측인경우
-//				for (int b = 1; b <= dataB[j]; b++) {
-//					if (tempIndex + dataB[j] < 0) {
-//						tempIndex = k-1;
-//						temp = 0;
-//					}
-//					else {
-//						temp++;
-//					}
+//				if (tempIndex - dataB[j] < 0) {
+//					tempIndex = k - (dataB[j] - (tempIndex));
 //				}
-//				tempIndex -= temp;
-//				//dataK[tempIndex] 이놈만큼 이동시켜줌
+//				else {
+//					tempIndex -= dataB[j];
+//				}
 //			}
 //			int tt = 0;
 //			if (d[j] == 'E') {

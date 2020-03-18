@@ -142,7 +142,9 @@
     <ClCompile Include="array2.cpp" />
     <ClCompile Include="array3.cpp" />
     <ClCompile Include="beehive.cpp" />
+    <ClCompile Include="bingo.cpp" />
     <ClCompile Include="cardGame.cpp" />
+    <ClCompile Include="chebyshevtheo.cpp" />
     <ClCompile Include="classpresident.cpp" />
     <ClCompile Include="colorpaper.cpp" />
     <ClCompile Include="combinational.cpp" />
@@ -163,9 +165,12 @@
     <ClCompile Include="matrix1.cpp" />
     <ClCompile Include="matrix2.cpp" />
     <ClCompile Include="mine.cpp" />
+    <ClCompile Include="mountail.cpp" />
     <ClCompile Include="nextnum.cpp" />
+    <ClCompile Include="pfactorization.cpp" />
     <ClCompile Include="prosject.cpp" />
     <ClCompile Include="represttValue.cpp" />
+    <ClCompile Include="soonyal.cpp" />
     <ClCompile Include="streetree.cpp" />
     <ClCompile Include="string2.cpp" />
     <ClCompile Include="string3.cpp" />

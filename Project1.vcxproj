@@ -166,6 +166,7 @@
     <ClCompile Include="nextnum.cpp" />
     <ClCompile Include="prosject.cpp" />
     <ClCompile Include="represttValue.cpp" />
+    <ClCompile Include="streetree.cpp" />
     <ClCompile Include="string2.cpp" />
     <ClCompile Include="string3.cpp" />
     <ClCompile Include="string4.cpp" />

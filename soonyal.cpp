@@ -19,10 +19,10 @@
 //			char alpha = i + 'a';
 //			
 //				result[x] = alpha;
-//			
+//				check[x] = true;
 //				getResult(x + 1);
 //				//x번째에 i를 넣는 모든경우를 이미 다 고ㅕ함
-//				
+//				check[x] = false;
 //				result[x] = 0;
 //		
 //		}

@@ -1,7 +1,7 @@
 //#include <stdio.h>
 //
 //int main() {
-//	
+//
 //	int data[27][27];
 //
 //	for (int i = 1; i <= 5; i++) {
@@ -12,87 +12,124 @@
 //
 //	int input[27][27];
 //
-//	bool temp[27][27];
+//	bool temp[27][27] = { {false,} };
 //	int bingCount = 0;
 //	int tt = 0;
 //
-//
+//	printf("\n");
 //	for (int i = 1; i <= 5; i++) {
 //		for (int j = 1; j <= 5; j++) {
 //			scanf_s("%d", &input[i][j]);
 //		}
 //	}
+//	printf("\n");
+//	int lastSum = 0;
 //
-//	bool aaa = false;
+//
+//	bool tmp1 = false; // /대각
+//	bool tmp2 = false; // 반대대각
 //	for (int i = 1; i <= 5; i++) {
 //		for (int j = 1; j <= 5; j++) {
-//			if()
-//			temp[i][j] = true;
-//			tt++;
-//
-//			int garoCnt = 0;
-//			int seroCnt = 0;
+//			lastSum++;
 //			for (int m = 1; m <= 5; m++) {
-//				if (temp[i][m]==true) {
-//					garoCnt++;
-//				}
-//				if (temp[m][i] == true) {
-//					seroCnt++;
-//				}
-//			}
-//			if (garoCnt == 5) {
-//				bingCount++;
-//			}
-//			if (bingCount == 3) {
-//				printf("%d\n", tt);
-//				aaa = true;
-//				break;
-//			}
-//			if (seroCnt == 5) {
-//				bingCount++;
-//			}
-//			if (bingCount == 3) {
-//				printf("%d\n", tt);
-//				aaa = true;
-//				break;
-//			}
-//			int tmp1 = 0;
-//			if (j == 6 - i) { //
-//				for (int m = 1; m <= 5; m++) {
-//					if (temp[m][6-m] == true) {
-//						tmp1++;
-//					}
-//				}
-//			}
-//			int tmp2 = 0;
-//			if (i == j) {
-//				for (int m = 1; m <= 5; m++) {
-//					if (temp[m][m] == true) {
-//						tmp2++;
-//					}
-//				}
-//			}
+//				for (int n = 1; n <= 5; n++) {
+//					if (input[i][j] == data[m][n]) {
 //
-//			if (tmp1 == 5) {
-//				bingCount++;
+//						if (temp[m][n] == 0) {
+//							temp[m][n] = true;
+//							printf("\n");
+//							printf("%d %d %d\n", m, n, lastSum);
+//							for (int i = 1; i <= 5; i++) {
+//								for (int j = 1; j <= 5; j++) {
+//									printf("%d ", temp[i][j]);
+//								}
+//								printf("\n");
+//							}
+//
+//
+//							//가로
+//							int bingTmp = 0;
+//							for (int k = 1; k <= 5; k++) {
+//
+//								if (temp[m][k] == 1) {
+//									bingTmp++;
+//								}
+//							}
+//							if (bingTmp == 5) {
+//								bingCount++;
+//							}
+//							if (bingCount >= 3) {
+//								printf("%d", lastSum);
+//								return 0;
+//							}
+//
+//							//세로
+//							bingTmp = 0;
+//							for (int k = 1; k <= 5; k++) {
+//
+//								if (temp[k][n] == 1) {
+//									bingTmp++;
+//								}
+//							}
+//							if (bingTmp == 5) {
+//								bingCount++;
+//							}
+//							
+//							if (bingCount >= 3) {
+//								printf("%d", lastSum);
+//								return 0;
+//							}
+//							// /대각
+//							if (tmp1 == false) {
+//								bingTmp = 0;
+//								for (int k = 1; k <= 5; k++) {
+//
+//									if (temp[6 - k][k] == 1) {
+//										bingTmp++;
+//
+//									}
+//								}
+//								if (bingTmp == 5) {
+//									bingCount++;
+//									tmp1 = true;
+//								}
+//
+//								if (bingCount >= 3) {
+//									printf("%d", lastSum);
+//									return 0;
+//								}
+//							}
+//							
+//							// 반대대각
+//
+//							if (tmp2 == false) {
+//								bingTmp = 0;
+//								for (int k = 1; k <= 5; k++) {
+//
+//									if (temp[k][k] == 1) {
+//										bingTmp++;
+//
+//									}
+//								}
+//								if (bingTmp == 5) {
+//									bingCount++;
+//									tmp2 = true;
+//								}
+//								if (bingCount >= 3) {
+//									printf("%d", lastSum);
+//									return 0;
+//								}
+//								printf("%d\n", bingCount);
+//							}
+//						
+//						}
+//
+//					}
+//				}
 //			}
-//			if (bingCount == 3) {
-//				printf("%d\n", tt);
-//				aaa = true;
-//				break;
-//			}
-//			if (tmp2 == 5) {
-//				bingCount++;
-//			}
-//			if (bingCount == 3) {
-//				printf("%d\n",tt);
-//				aaa = true;
-//				break;
-//			}	
-//		}
-//		if (aaa == true) {
-//			break;
 //		}
 //	}
+//
+//
 //
 //}

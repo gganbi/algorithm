@@ -1,2 +1,3 @@
-﻿  bingo.cpp
+﻿  tobin.cpp
+C:\Users\김성민\source\repos\Test\Project1\tobin.cpp(31): warning C4717: 'tobin': 모든 제어 경로에서 재귀적입니다. 함수로 인해 런타임 스택 오버플로가 발생합니다.
   Project1.vcxproj -> C:\Users\김성민\source\repos\Test\Debug\Project1.exe

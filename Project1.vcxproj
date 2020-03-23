@@ -153,10 +153,12 @@
     <ClCompile Include="cource3macofarr.cpp" />
     <ClCompile Include="course3Aattackrange.cpp" />
     <ClCompile Include="diceGame.cpp" />
+    <ClCompile Include="division.cpp" />
     <ClCompile Include="eightnine.cpp" />
     <ClCompile Include="factorialBinary.cpp" />
     <ClCompile Include="fibonacci.cpp" />
     <ClCompile Include="findprime.cpp" />
+    <ClCompile Include="fmttalpha.cpp" />
     <ClCompile Include="fractionsum.cpp" />
     <ClCompile Include="level3Box.cpp" />
     <ClCompile Include="level3BoxMaing.cpp" />
@@ -185,6 +187,7 @@
     <ClCompile Include="test.cpp" />
     <ClCompile Include="test2.cpp" />
     <ClCompile Include="testSource.cpp" />
+    <ClCompile Include="tobin.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

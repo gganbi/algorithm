@@ -1,48 +1,40 @@
 //#include <stdio.h>
 //
-//bool aa(int a) {
-//	int cnt = 0;
+//int fs[130000] = {0,};
 //
-//	for (int i = 1; i <= a; i++) {
-//		if (a % i == 0) {
-//			cnt++;
+//int dd(int a) { //각 값마다 소수인놈에 갯수 출력
+//
+//	int first = a;
+//	for (int i = 2; i <= a; i++) {  //배수
+//		for (int j = 2; i*j <= a; j++) { //전체 돌면서 그 배수인애들 false	
+//			fs[i * j] = 1;
 //		}
 //	}
-//	if (cnt == 2) {
-//		return true;
-//	}
-//	else {
-//		return false;
-//	}
-//}
-//
-//int dd(int a,int b) {
-//
-//
 //	int cnt = 0;
-//	for (int i = a + 1; i <= b; i++) {
-//		if (aa(i)) {
+//	for (int i = 2; i <= a; i++) {
+//		if (fs[i] == 0) {
 //			cnt++;
 //		}
 //	}
 //	return cnt;
-//
 //}
 //
 //
 //int main() {
 //
+//
+//
 //	int data;
 //	while (true) {
-//		scanf_s(" %d", &data);
+//		scanf_s("%d", &data);
 //
 //		if (data == 0) {
 //			break;
 //		}
 //		else {
-//			printf("%d\n", dd(data, 2 * data));
+//			printf("%d\n",dd(data*2)- dd(data));
 //		}
-//		data = 0;
+//		
 //	
 //	}
 //	return 0;

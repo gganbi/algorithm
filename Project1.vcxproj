@@ -152,6 +152,7 @@
     <ClCompile Include="corse3Chess.cpp" />
     <ClCompile Include="cource3macofarr.cpp" />
     <ClCompile Include="course3Aattackrange.cpp" />
+    <ClCompile Include="dessert.cpp" />
     <ClCompile Include="diceGame.cpp" />
     <ClCompile Include="division.cpp" />
     <ClCompile Include="eightnine.cpp" />
@@ -160,6 +161,7 @@
     <ClCompile Include="findprime.cpp" />
     <ClCompile Include="fmttalpha.cpp" />
     <ClCompile Include="fractionsum.cpp" />
+    <ClCompile Include="habbungSort.cpp" />
     <ClCompile Include="level3Box.cpp" />
     <ClCompile Include="level3BoxMaing.cpp" />
     <ClCompile Include="lever3car.cpp" />
@@ -169,8 +171,11 @@
     <ClCompile Include="mine.cpp" />
     <ClCompile Include="mountail.cpp" />
     <ClCompile Include="nextnum.cpp" />
+    <ClCompile Include="numberBox.cpp" />
+    <ClCompile Include="numberCount.cpp" />
     <ClCompile Include="pfactorization.cpp" />
     <ClCompile Include="prosject.cpp" />
+    <ClCompile Include="quickSort.cpp" />
     <ClCompile Include="represttValue.cpp" />
     <ClCompile Include="soonyal.cpp" />
     <ClCompile Include="streetree.cpp" />
@@ -187,7 +192,9 @@
     <ClCompile Include="test.cpp" />
     <ClCompile Include="test2.cpp" />
     <ClCompile Include="testSource.cpp" />
+    <ClCompile Include="tetris.cpp" />
     <ClCompile Include="tobin.cpp" />
+    <ClCompile Include="twoLiquid.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

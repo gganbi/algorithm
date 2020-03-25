@@ -6,6 +6,8 @@
 //int m[100010];
 //
 //int Last = 0;
+//int mCmt = 0;
+//bool test = false;
 //
 //void Swap(int arr[], int a, int b) // a,b 스왑 함수 
 //{
@@ -68,10 +70,17 @@
 //
 //	if (low >high) {
 //
-//		printf("min : %d %d %d \n", a[high], a[low], a[low + 1]);
+//		printf("high-1 high low %d %d %d\n", high - 1, high, low);
+//		printf("high-1 high low %d %d %d\n",a[high-1] ,a[high], a[low]);
 //
-//		// a[high], a[low]
+//		if (low > mCmt) {
+//			low--;
+//		}
+//		if (high ==0) {
+//			high++;
+//		}
 //
+//		// low high 중 절대값이 0과 가까운애 찾기
 //		int tmp1 = a[high];
 //		int tmp2 = a[low];
 //		if (tmp1 < 0) {
@@ -80,18 +89,24 @@
 //		if (tmp2 < 0) {
 //			tmp2 *= -1;
 //		}
-//		if (tmp1 <= tmp2) {
+//		if (tmp1 < tmp2) {
 //			Last = high;
 //		}
-//		else {
+//		else if (tmp1 > tmp2) {
 //			Last = low;
+//		}
+//		else {
+//
+//			test = true;
+//			
+//				Last = low;
+//
+//			
 //		}
 //	
 //		return -1;
 //	}
 //
-//
-//	//printf("aaa %d %d \n", a[0], a[1]);
 //	int mid = (low + high) / 2;
 //
 //	if (target == a[mid]) {
@@ -116,14 +131,10 @@
 //	for (int i = 1; i <= temp; i++) {
 //		scanf_s("%d", &n[i]);
 //	}
-////	sort(n, temp);
+//
 //	QuickSort(n, 1, temp);
 //
-//	/*for (int i = 1; i <= temp; i++) {
-//		printf("%d ",n[i]);
-//	}printf("\n");*/
 //
-//	int mCmt = 0;
 //	for (int i = 1; i <= temp; i++) {
 //		for (int j = i; j <= temp; j++) {
 //			if (i != j) {
@@ -133,13 +144,18 @@
 //			}
 //		}
 //	}
-//	//sort(m, mCmt);
+//
 //	QuickSort(m, 1, mCmt);
 //
 //	if (mCmt == 1) {
 //		printf("%d %d", n[1], n[2]);
 //		return 0;
 //	}
+//
+//	for (int i = 1; i <= temp; i++) {
+//		printf("%d ", n[i]);
+//	}
+//	printf("\n");
 //	for (int i = 1; i <= mCmt; i++) {
 //		printf("%d ", m[i]);
 //	}
@@ -148,21 +164,71 @@
 //	binary(m, 0, 1, mCmt);
 //	int min = m[Last];
 //	
-//	//printf("%d\n", mCmt);
-//	//printf("%d\n", min);
-//	//printf("%d\n", Last);
-//	for (int i = 1; i <= temp; i++) {
-//		for (int j = i; j <= temp; j++) {
-//			if (i != j) {
-//			
-//				if (min == n[i] + n[j]) {
-//					printf("%d %d", n[i], n[j]);
-//					return 0;
-//				}
+//	printf("%d\n", mCmt);
+//	printf("%d\n", Last);
+//	printf("%d\n", min);
+//	
+//	if (test == false) {
+//		for (int i = 1; i <= temp; i++) {
+//			for (int j = i; j <= temp; j++) {
+//				if (i != j) {
 //
+//					if (min == n[i] + n[j]) {
+//						printf("%d %d", n[i], n[j]);
+//						return 0;
+//					}
+//
+//				}
 //			}
 //		}
 //	}
+//	else {
+//		int tmp1 = 0;
+//		for (int i = 1; i <= temp; i++) {
+//			for (int j = i; j <= temp; j++) {
+//				if (i != j) {
+//
+//					if (min == n[i] + n[j]) {
+//						tmp1 = n[i];
+//					}
+//
+//				}
+//			}
+//		}
+//		min *= -1;
+//		int tmp2 = 0;
+//		for (int i = 1; i <= temp; i++) {
+//			for (int j = i; j <= temp; j++) {
+//				if (i != j) {
+//
+//					if (min == n[i] + n[j]) {
+//						tmp2= n[i];
+//					}
+//
+//				}
+//			}
+//		}
+//
+//		if(tmp1 <= tmp2) {
+//			min *= -1;
+//		}
+//		for (int i = 1; i <= temp; i++) {
+//			for (int j = i; j <= temp; j++) {
+//				if (i != j) {
+//
+//					if (min == n[i] + n[j]) {
+//						printf("%d %d", n[i], n[j]);
+//						return 0;
+//					}
+//
+//				}
+//			}
+//		}
+//
+//
+//
+//	}
+//	
 //
 //	//printf("%d ", Last);
 //}

@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2chsicDap.cpp" />
     <ClCompile Include="array1.cpp" />
     <ClCompile Include="array2.cpp" />
     <ClCompile Include="array3.cpp" />
@@ -171,6 +172,7 @@
     <ClCompile Include="mine.cpp" />
     <ClCompile Include="mountail.cpp" />
     <ClCompile Include="nextnum.cpp" />
+    <ClCompile Include="nnDan.cpp" />
     <ClCompile Include="numberBox.cpp" />
     <ClCompile Include="numberCount.cpp" />
     <ClCompile Include="pfactorization.cpp" />
@@ -178,6 +180,7 @@
     <ClCompile Include="quickSort.cpp" />
     <ClCompile Include="represttValue.cpp" />
     <ClCompile Include="soonyal.cpp" />
+    <ClCompile Include="stack.cpp" />
     <ClCompile Include="streetree.cpp" />
     <ClCompile Include="string2.cpp" />
     <ClCompile Include="string3.cpp" />
@@ -194,6 +197,7 @@
     <ClCompile Include="testSource.cpp" />
     <ClCompile Include="tetris.cpp" />
     <ClCompile Include="tobin.cpp" />
+    <ClCompile Include="treeSlice.cpp" />
     <ClCompile Include="twoLiquid.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

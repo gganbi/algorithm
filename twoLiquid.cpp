@@ -6,8 +6,9 @@
 //int m[100010];
 //
 //int Last = 0;
-//int mCmt = 0;
+//int mCmt = 1;
 //bool test = false;
+//int temp;
 //
 //void Swap(int arr[], int a, int b) // a,b 스왑 함수 
 //{
@@ -70,48 +71,44 @@
 //
 //	if (low >high) {
 //
-//		printf("high-1 high low %d %d %d\n", high - 1, high, low);
-//		printf("high-1 high low %d %d %d\n",a[high-1] ,a[high], a[low]);
+//		int value;
+//		int temp1 = -1 * target + a[low];
+//		int temp2 = -1 * target + a[high];
 //
-//		if (low > mCmt) {
-//			low--;
-//		}
-//		if (high ==0) {
-//			high++;
+//		if (temp1 < 0) {
+//			temp1 *= -1;
 //		}
 //
-//		// low high 중 절대값이 0과 가까운애 찾기
-//		int tmp1 = a[high];
-//		int tmp2 = a[low];
-//		if (tmp1 < 0) {
-//			tmp1 *= -1;
+//		if (temp2 < 0) {
+//			temp2 *= -1;
 //		}
-//		if (tmp2 < 0) {
-//			tmp2 *= -1;
-//		}
-//		if (tmp1 < tmp2) {
-//			Last = high;
-//		}
-//		else if (tmp1 > tmp2) {
-//			Last = low;
+//
+//		if (temp1 >= temp2) {
+//			value = a[high];
 //		}
 //		else {
-//
-//			test = true;
-//			
-//				Last = low;
-//
-//			
+//			value = a[low];
 //		}
-//	
-//		return -1;
+//		if (high < 1) {
+//			// low만 처리
+//			value = a[low];
+//		}
+//		if (low >temp) {
+//			// high만 처리
+//			value = a[high];
+//		}
+//
+//		/*printf("target : %d\n", target);
+//		printf("low high : %d %d\n", low, high);
+//		printf("a[low] a[high] : %d %d\n", a[low], a[high]);
+//		printf("최종값  : %d\n\n", value);*/
+//		return value;
 //	}
 //
 //	int mid = (low + high) / 2;
 //
 //	if (target == a[mid]) {
-//		Last = mid;
-//		return 1;
+//		return a[mid];
 //	}
 //	else if (target > a[mid]) {
 //		binary(a, target, mid + 1, high);
@@ -124,7 +121,7 @@
 //
 //int main() {
 //
-//	int temp;
+//	
 //
 //	scanf_s("%d", &temp);
 //
@@ -134,102 +131,58 @@
 //
 //	QuickSort(n, 1, temp);
 //
-//
-//	for (int i = 1; i <= temp; i++) {
-//		for (int j = i; j <= temp; j++) {
-//			if (i != j) {
-//				mCmt++;
-//				m[mCmt] = n[i] + n[j];
-//				
-//			}
-//		}
-//	}
-//
-//	QuickSort(m, 1, mCmt);
-//
-//	if (mCmt == 1) {
+//	if (temp == 2) {
 //		printf("%d %d", n[1], n[2]);
 //		return 0;
 //	}
-//
+//	/*printf("\n");
 //	for (int i = 1; i <= temp; i++) {
 //		printf("%d ", n[i]);
 //	}
 //	printf("\n");
-//	for (int i = 1; i <= mCmt; i++) {
-//		printf("%d ", m[i]);
+//	printf("\n");*/
+//
+//	//binary(n, -1 * n[2], 1, temp);
+//	for (int i = 1; i <= temp; i++) {
+//		m[i]=binary(n, -1 * n[i], 1, temp);	
+//	}
+//	//printf("\n");
+//	//printf("\n");
+//
+//	//binary(n, -1 * n[2], 1, temp);
+//
+//	/*for (int i = 1; i <= temp; i++) {
+//		printf("%d ",m[i]);
 //	}
 //	printf("\n");
-//
-//	binary(m, 0, 1, mCmt);
-//	int min = m[Last];
+//	printf("\n");
+//	for (int i = 1; i <= temp; i++) {
+//		printf("%d ",n[i]+ m[i]);
+//	}
+//	printf("\n");
+//	printf("\n");*/
 //	
-//	printf("%d\n", mCmt);
-//	printf("%d\n", Last);
-//	printf("%d\n", min);
+//	int min = n[1] + m[1];
+//	if (min < 0) {
+//		min = -1 * min;
+//	}
+//	int lastIndex = 1;
 //	
-//	if (test == false) {
-//		for (int i = 1; i <= temp; i++) {
-//			for (int j = i; j <= temp; j++) {
-//				if (i != j) {
+//	for (int i = 2; i <= temp; i++) {
+//		int temp = n[i] + m[i];
+//		if (temp < 0) {
+//			temp = -1 * temp;
+//		}
+//		//printf("aaa : %d \n", temp);
 //
-//					if (min == n[i] + n[j]) {
-//						printf("%d %d", n[i], n[j]);
-//						return 0;
-//					}
-//
-//				}
-//			}
+//		if (min > temp) {
+//			min = temp;
+//			lastIndex = i;
 //		}
 //	}
-//	else {
-//		int tmp1 = 0;
-//		for (int i = 1; i <= temp; i++) {
-//			for (int j = i; j <= temp; j++) {
-//				if (i != j) {
-//
-//					if (min == n[i] + n[j]) {
-//						tmp1 = n[i];
-//					}
-//
-//				}
-//			}
-//		}
-//		min *= -1;
-//		int tmp2 = 0;
-//		for (int i = 1; i <= temp; i++) {
-//			for (int j = i; j <= temp; j++) {
-//				if (i != j) {
-//
-//					if (min == n[i] + n[j]) {
-//						tmp2= n[i];
-//					}
-//
-//				}
-//			}
-//		}
-//
-//		if(tmp1 <= tmp2) {
-//			min *= -1;
-//		}
-//		for (int i = 1; i <= temp; i++) {
-//			for (int j = i; j <= temp; j++) {
-//				if (i != j) {
-//
-//					if (min == n[i] + n[j]) {
-//						printf("%d %d", n[i], n[j]);
-//						return 0;
-//					}
-//
-//				}
-//			}
-//		}
+//	printf("%d \n", lastIndex);
+//	printf("%d %d", n[lastIndex], m[lastIndex]);
 //
 //
-//
-//	}
-//	
-//
-//	//printf("%d ", Last);
 //}
 //

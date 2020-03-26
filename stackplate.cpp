@@ -1,43 +1,50 @@
 //#include <stdio.h>
 //
 //
-//struct Queue {
-//    int data[300] = { 0, };
-//    int front = -1;
-//    int rear = -1;
+//struct SStackk {
+//    int data[300] = {0,};
+//    int top = -1;
 //    int capacity = 0;
 //
 //    void create(int y) {
 //        capacity = y;
 //    }
 //
-//    int push(unsigned int val) {
+//    int IsEmpty() {
+//        if (top < 0)
+//            return true;
+//        else
+//            return false;
+//    }
+//    int IsFull() {
+//        if (top >= capacity - 1)
+//            return true;
+//        else
+//            return false;
+//    }
 //
-//        if (rear >= capacity - 1) {
-//            printf("Overflow");
-//            return (-1);
-//        }
-//        data[++rear] = val;
+//    void push(int value) {
+//        if (IsFull() == true)
+//            printf("Overflow\n");
+//        else
+//            data[++top] = value;
 //    }
 //
 //    int pop() {
-//
-//        if (front >= capacity - 1 || front == rear) {
-//            printf("Underflow");
-//            return -1;
-//        }
-//        return data[front++];
+//        if (IsEmpty() == true)
+//            printf("Underflow\n");
+//        else
+//            return data[top--];
 //    }
 //
 //    int peek() {
-//        if (front == rear)
+//        if (IsEmpty() == true)
 //            return -1;
-//        else {
-//            int temp = front + 1;
-//
-//            return data[temp];
-//        }         
+//        else
+//            return data[top];
 //    }
+//
+//
 //};
 //
 //int main() {
@@ -45,7 +52,7 @@
 //    int data[10000];
 //
 //    scanf_s("%d %d", &n, &m);
-//    Queue s1;
+//    SStackk s1;
 //    s1.create(n);
 //
 //    for (int i = 1; i <= m; i++) {
@@ -60,7 +67,7 @@
 //        else if (a == 2) {
 //            s1.pop();
 //        }
-//        else if (a == 3) {
+//        else if(a == 3) {
 //
 //            if (s1.peek() == -1) {
 //                printf("NULL\n");
@@ -68,7 +75,16 @@
 //            else {
 //                printf("peek : %d\n", s1.peek());
 //            }
+//
+//           
 //        }
+//
 //    }
+//
+//
+//
 //    return 0;
+//
+//
+//
 //}

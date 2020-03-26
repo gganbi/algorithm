@@ -146,6 +146,7 @@
     <ClCompile Include="bingo.cpp" />
     <ClCompile Include="cardGame.cpp" />
     <ClCompile Include="chebyshevtheo.cpp" />
+    <ClCompile Include="circleQue.cpp" />
     <ClCompile Include="classpresident.cpp" />
     <ClCompile Include="colorpaper.cpp" />
     <ClCompile Include="combinational.cpp" />
@@ -177,10 +178,14 @@
     <ClCompile Include="numberCount.cpp" />
     <ClCompile Include="pfactorization.cpp" />
     <ClCompile Include="prosject.cpp" />
+    <ClCompile Include="que.cpp" />
     <ClCompile Include="quickSort.cpp" />
     <ClCompile Include="represttValue.cpp" />
+    <ClCompile Include="seat.cpp" />
     <ClCompile Include="soonyal.cpp" />
     <ClCompile Include="stack.cpp" />
+    <ClCompile Include="stackParenthesis.cpp" />
+    <ClCompile Include="stackplate.cpp" />
     <ClCompile Include="streetree.cpp" />
     <ClCompile Include="string2.cpp" />
     <ClCompile Include="string3.cpp" />

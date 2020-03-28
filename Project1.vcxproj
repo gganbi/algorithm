@@ -142,7 +142,9 @@
     <ClCompile Include="array1.cpp" />
     <ClCompile Include="array2.cpp" />
     <ClCompile Include="array3.cpp" />
+    <ClCompile Include="basballGame.cpp" />
     <ClCompile Include="beehive.cpp" />
+    <ClCompile Include="binarytree.cpp" />
     <ClCompile Include="bingo.cpp" />
     <ClCompile Include="cardGame.cpp" />
     <ClCompile Include="chebyshevtheo.cpp" />
@@ -177,6 +179,7 @@
     <ClCompile Include="numberBox.cpp" />
     <ClCompile Include="numberCount.cpp" />
     <ClCompile Include="pfactorization.cpp" />
+    <ClCompile Include="priorityQue.cpp" />
     <ClCompile Include="prosject.cpp" />
     <ClCompile Include="que.cpp" />
     <ClCompile Include="quickSort.cpp" />

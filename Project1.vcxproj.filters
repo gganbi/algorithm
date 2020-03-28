@@ -213,5 +213,14 @@
     <ClCompile Include="stackParenthesis.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="basballGame.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="binarytree.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="priorityQue.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

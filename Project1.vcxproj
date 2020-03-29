@@ -158,7 +158,9 @@
     <ClCompile Include="course3Aattackrange.cpp" />
     <ClCompile Include="dessert.cpp" />
     <ClCompile Include="diceGame.cpp" />
+    <ClCompile Include="divideAndConquer.cpp" />
     <ClCompile Include="division.cpp" />
+    <ClCompile Include="dynamicAlgorithm.cpp" />
     <ClCompile Include="eightnine.cpp" />
     <ClCompile Include="factorialBinary.cpp" />
     <ClCompile Include="fibonacci.cpp" />

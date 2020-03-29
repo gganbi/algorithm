@@ -231,5 +231,11 @@
     <ClCompile Include="test5.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="divideAndConquer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dynamicAlgorithm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

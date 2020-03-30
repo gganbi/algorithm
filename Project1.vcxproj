@@ -153,6 +153,7 @@
     <ClCompile Include="colorpaper.cpp" />
     <ClCompile Include="combinational.cpp" />
     <ClCompile Include="combinationzero.cpp" />
+    <ClCompile Include="commonJosang.cpp" />
     <ClCompile Include="corse3Chess.cpp" />
     <ClCompile Include="cource3macofarr.cpp" />
     <ClCompile Include="course3Aattackrange.cpp" />
@@ -181,6 +182,7 @@
     <ClCompile Include="numberBox.cpp" />
     <ClCompile Include="numberCount.cpp" />
     <ClCompile Include="pfactorization.cpp" />
+    <ClCompile Include="power.cpp" />
     <ClCompile Include="priorityQue.cpp" />
     <ClCompile Include="prosject.cpp" />
     <ClCompile Include="que.cpp" />
@@ -207,9 +209,12 @@
     <ClCompile Include="test3.cpp" />
     <ClCompile Include="test4.cpp" />
     <ClCompile Include="test5.cpp" />
+    <ClCompile Include="test6.cpp" />
     <ClCompile Include="testSource.cpp" />
     <ClCompile Include="tetris.cpp" />
     <ClCompile Include="tobin.cpp" />
+    <ClCompile Include="treeHigh.cpp" />
+    <ClCompile Include="treesDistance.cpp" />
     <ClCompile Include="treeSlice.cpp" />
     <ClCompile Include="twoLiquid.cpp" />
   </ItemGroup>

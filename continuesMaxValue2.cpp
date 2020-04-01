@@ -41,3 +41,26 @@
 //	printf("%d", myMax);
 //
 //}
+
+// S라는 숫자이상이 되려면 구간 몇이 되어야하는가 
+//bool check(int interval) {
+//
+//	int sum = 0;
+//
+//	for (int i = 0; i < interval; i++) sum += data[i];
+//
+//	if (sum >= S) return true;
+//
+//	for (int i = 0; i < n - interval; i++) {
+//		sum = sum - data[i] + data[i + interval];
+//
+//		if (sum >= s) return true;
+//	}
+//
+//	return true;
+//
+//
+//
+//
+//
+//}

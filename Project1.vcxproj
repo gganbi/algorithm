@@ -162,6 +162,7 @@
     <ClCompile Include="cource3macofarr.cpp" />
     <ClCompile Include="course3Aattackrange.cpp" />
     <ClCompile Include="dessert.cpp" />
+    <ClCompile Include="dfs.cpp" />
     <ClCompile Include="diceGame.cpp" />
     <ClCompile Include="divideAndConquer.cpp" />
     <ClCompile Include="division.cpp" />
@@ -196,9 +197,11 @@
     <ClCompile Include="quickSort.cpp" />
     <ClCompile Include="represttValue.cpp" />
     <ClCompile Include="seat.cpp" />
+    <ClCompile Include="sectionUnion.cpp" />
     <ClCompile Include="soonyal.cpp" />
     <ClCompile Include="stack.cpp" />
     <ClCompile Include="stackParenthesis.cpp" />
+    <ClCompile Include="stackParentthesis.cpp" />
     <ClCompile Include="stackplate.cpp" />
     <ClCompile Include="streetree.cpp" />
     <ClCompile Include="string2.cpp" />
@@ -218,9 +221,11 @@
     <ClCompile Include="test4.cpp" />
     <ClCompile Include="test5.cpp" />
     <ClCompile Include="test6.cpp" />
+    <ClCompile Include="test7.cpp" />
     <ClCompile Include="testSource.cpp" />
     <ClCompile Include="tetris.cpp" />
     <ClCompile Include="tobin.cpp" />
+    <ClCompile Include="treeDistance2.cpp" />
     <ClCompile Include="treeHigh.cpp" />
     <ClCompile Include="treesDistance.cpp" />
     <ClCompile Include="treeSlice.cpp" />

@@ -13,7 +13,7 @@
 //
 //	int mid = 1;;
 //	int start = 1;
-//	int end = n * n;
+//	int end = n * n+1;
 //	while (true) {
 //
 //		if (start > end) {
@@ -50,15 +50,10 @@
 //				cnt += temp;	
 //			}
 //		}
+//	
 //		cnt++;
-//
-//		if (cnt == k) {
-//			
-//			break;
-//			
-//			
-//		}
-//		else if (cnt > k) {
+//		
+//		if (cnt > k) {
 //			end = mid - 1;
 //		}
 //		else {
@@ -67,11 +62,6 @@
 //
 //	}
 //
-//	for (int i = 1; i <= n; i++) {
-//		if(i<=mid && mid<i+1)
-//
-//	}
-//	
 //
 //	printf("%d", mid);
 //

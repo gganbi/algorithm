@@ -1,8 +1,9 @@
 //#include<stdio.h>
 //#include<string.h>
 //
+//int topIndex = -1;
 //struct SStackk {
-//    int data[300] = {0,};
+//    char data[300];
 //    int top = -1;
 //    int capacity = 0;
 //
@@ -35,7 +36,7 @@
 //            printf("NO\n");
 //            return -1;
 //        }
-//           
+//
 //        else
 //            return data[top--];
 //    }
@@ -58,31 +59,89 @@
 //
 //    char data[100];
 //
-//    scanf_s("%s", data,100);
+//    scanf_s("%s", data, 100);
 //
-//   // printf("%s", data);
+//    char dd = 10;
+//    ss.push(dd);
+//
 //
 //    for (int i = 0; i < strlen(data); i++) {
-// 
+//
 //        if (data[i] == '(') {
 //            ss.push(data[i]);
+//            topIndex++;
 //        }
-//        else {
-//            if (ss.pop() == -1) {
-//             
-//                return 0;
-//            }   printf("ddddd");
+//        else if (data[i] == '[') {
+//            ss.push(data[i]);
+//            topIndex++;
 //        }
+//        else if (data[i] == ')') {
+//            if (ss.peek() == '(') {
+//                ss.pop();
+//                topIndex--;
+//                ss.push(2);
+//                topIndex++;
+//            }
+//            else  {
+//
+//                char first = ss.pop();
+//                char second = ss.pop();
+//                ss.push(second);
+//                ss.push(first);
+//
+//                if (second == '(') {
+//                    int temp = ss.peek();
+//                    temp = 2 * temp;
+//                    ss.pop();
+//                    ss.push(temp);
+//                }
+//                else {
+//                    first = ss.pop();
+//                    second = ss.pop();
+//                    ss.push(first + second);
+//                    
+//                }
+//
+//
+//                
+//            }
+//        }
+//        else if (data[i] == ']') {
+//            if (ss.peek() == '[') {
+//                ss.pop();
+//                ss.push(3);
+//            }
+//            else {
+//            
+//                char first = ss.pop();
+//                char second = ss.pop();
+//                ss.push(second);
+//                ss.push(first);
+//
+//                if (second == '[') {
+//                    int temp = ss.peek();
+//                    temp = 3 * temp;
+//                    ss.pop();
+//                    ss.push(temp);
+//                }
+//                else {
+//                    first = ss.pop();
+//                    second = ss.pop();
+//                    ss.push(first + second);
+//                }
+//
+//            }
+//        }
+//       // printf("%c %d\n", ss.peek(),ss.peek());
 //    }
 //
-//    if (ss.peek() == -1) {
-//        printf("YES");
+//    while (true) {
+//        if (ss.peek() != -1) {
+//        
+//            printf("%d\n", ss.pop());
+//        }
+//    
 //    }
-//    else {
-//        printf("NO");
-//    }
-// 
-//
-//
-//	return 0;
+//   
+//    return 0;
 //}

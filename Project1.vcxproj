@@ -139,6 +139,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2chsicDap.cpp" />
+    <ClCompile Include="Adjacent list.cpp" />
+    <ClCompile Include="Adjacent matrix .cpp" />
     <ClCompile Include="array1.cpp" />
     <ClCompile Include="array2.cpp" />
     <ClCompile Include="array3.cpp" />
@@ -154,6 +156,8 @@
     <ClCompile Include="combinational.cpp" />
     <ClCompile Include="combinationzero.cpp" />
     <ClCompile Include="commonJosang.cpp" />
+    <ClCompile Include="continuesMaxValue.cpp" />
+    <ClCompile Include="continuesMaxValue2.cpp" />
     <ClCompile Include="corse3Chess.cpp" />
     <ClCompile Include="cource3macofarr.cpp" />
     <ClCompile Include="course3Aattackrange.cpp" />
@@ -168,7 +172,9 @@
     <ClCompile Include="findprime.cpp" />
     <ClCompile Include="fmttalpha.cpp" />
     <ClCompile Include="fractionsum.cpp" />
+    <ClCompile Include="goodseq.cpp" />
     <ClCompile Include="habbungSort.cpp" />
+    <ClCompile Include="inequal.cpp" />
     <ClCompile Include="level3Box.cpp" />
     <ClCompile Include="level3BoxMaing.cpp" />
     <ClCompile Include="lever3car.cpp" />
@@ -181,6 +187,7 @@
     <ClCompile Include="nnDan.cpp" />
     <ClCompile Include="numberBox.cpp" />
     <ClCompile Include="numberCount.cpp" />
+    <ClCompile Include="overlapNoSeciton.cpp" />
     <ClCompile Include="pfactorization.cpp" />
     <ClCompile Include="power.cpp" />
     <ClCompile Include="priorityQue.cpp" />
@@ -204,6 +211,7 @@
     <ClCompile Include="stringMinus.cpp" />
     <ClCompile Include="stringMultiple.cpp" />
     <ClCompile Include="stringPressior.cpp" />
+    <ClCompile Include="temp.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="test2.cpp" />
     <ClCompile Include="test3.cpp" />

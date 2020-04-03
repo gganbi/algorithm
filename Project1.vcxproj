@@ -146,6 +146,7 @@
     <ClCompile Include="array3.cpp" />
     <ClCompile Include="basballGame.cpp" />
     <ClCompile Include="beehive.cpp" />
+    <ClCompile Include="bfs.cpp" />
     <ClCompile Include="binarytree.cpp" />
     <ClCompile Include="bingo.cpp" />
     <ClCompile Include="cardGame.cpp" />
@@ -188,6 +189,7 @@
     <ClCompile Include="nnDan.cpp" />
     <ClCompile Include="numberBox.cpp" />
     <ClCompile Include="numberCount.cpp" />
+    <ClCompile Include="numberMake.cpp" />
     <ClCompile Include="overlapNoSeciton.cpp" />
     <ClCompile Include="pfactorization.cpp" />
     <ClCompile Include="power.cpp" />
@@ -225,6 +227,7 @@
     <ClCompile Include="testSource.cpp" />
     <ClCompile Include="tetris.cpp" />
     <ClCompile Include="tobin.cpp" />
+    <ClCompile Include="top.cpp" />
     <ClCompile Include="treeDistance2.cpp" />
     <ClCompile Include="treeHigh.cpp" />
     <ClCompile Include="treesDistance.cpp" />

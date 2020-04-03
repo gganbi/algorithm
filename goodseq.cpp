@@ -7,58 +7,56 @@
 //void dd(int x,int y) {
 //
 //    if (x >= n) {
-//
-//        bool test = false;
-//
-//     /*   if (result[0] == 1 && result[1] == 2 && result[2] == 1
-//            && result[3]==3 && result[4]==1 && result[5]==2
-//            && result[6]==3 && result[7]==1 && result[8]==3) {
 //        
-//            printf("dddd");
-//        }*/
-//
-//        int temp;
-//        if (n % 2 == 0) {
-//            temp = n / 2;
-//        }
-//        else {
-//            temp = n / 2 + 1;
-//        }
-//  
-//        for (int i = 2; i <= temp; i++) {
-//       
-//
-//            for (int m = 0; m <= n - i*2; m++) {
-//                int cnt = 0;
-//                for (int j = 0; j < i; j++) {
-//
-//                    if (result[m+j] == result[m+i+j]) {
-//                        cnt++;
-//                    }
-//                }
-//                if (cnt == i) {
-//                  //  printf("Test :: %d %d\n", i, m);
-//                    test = true;
-//                    break;
-//                }
-//            }    
-//        }
-//
-//        if (test == false) {
-//
-//            if (lastCnt == 0) {
-//                for (int i = 0; i < x; i++) {
-//                    printf("%d", result[i]);
-//                }printf("\n");
-//            }lastCnt++;
-//            
-//        }  
+//        for (int i = 0; i < x; i++) {
+//            printf("%d", result[i]);
+//        } printf("\n");
 //    }
 //    else {
 //        for (int i = 1; i <= 3; i++) {         
 //            if (y != i) {
 //                result[x] = i;
-//                dd(x + 1, i);
+//                if (x == 0) {
+//                    dd(x + 1, i);
+//                }
+//
+//                //x+1 수열크기
+//                //m 간격비교값 크기
+//
+//                //해당 수열에서 중복되는애가 있는지 체크처리
+//
+//                bool chk = false;
+//
+//                for (int m = 1; m <= (x + 1) / 2; m++) {
+//                    //m 간격비교값 크기
+//                   
+//                    for (int j = 0; j <n; j++) {
+//                        // j 구간비교할때 첫항 
+//                        //j+y+m<n
+//                        int cnt = 0;
+//                        for (int y = 0; y <m; y++) {
+//                        //y 구간내에서 비교해주러감
+//                            if (j + y + m < n) {
+//                                if (result[j + y] == result[j + y + m]) {
+//                                    cnt++;
+//                                }
+//                            }         
+//                        }
+//                        if (cnt >= x + 1) {// 다똑같다는것
+//                            chk == true;
+//
+//                        }
+//                    }       
+//                }
+//                if (chk == true) {
+//                
+//                }
+//                else {
+//                    dd(x + 1, i);
+//                }
+//           
+//
+//
 //            }   
 //        }
 //    

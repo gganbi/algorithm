@@ -218,7 +218,12 @@
     <ClCompile Include="stringPressior.cpp" />
     <ClCompile Include="temp.cpp" />
     <ClCompile Include="test.cpp" />
+    <ClCompile Include="test2-1.cpp" />
+    <ClCompile Include="test2-2.cpp" />
+    <ClCompile Include="test2-3.cpp" />
+    <ClCompile Include="test2-4.cpp" />
     <ClCompile Include="test2.cpp" />
+    <ClCompile Include="test2_5.cpp" />
     <ClCompile Include="test3.cpp" />
     <ClCompile Include="test4.cpp" />
     <ClCompile Include="test5.cpp" />

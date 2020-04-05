@@ -7,7 +7,7 @@
 //int tmp[110][110];
 //int t;
 //
-//int ttttt = 1;
+//
 //int main() {
 //	scanf_s("%d %d", &n, &m);
 //	scanf_s("%d", &k);
@@ -37,13 +37,15 @@
 //	
 //	int cnt = 1;
 //	for (int ii = 1; ii <= t; ii++) {
+//		int ttttt = 1;
 //		for (int i = 1; i <= n; i++) {
 //			for (int j = 1; j <= m; j++) {
-//				for (int c = 1; c <= k; c++) {
-//					int tempX1 = i - c;
-//					int tempX2 = i + c;
-//					int tempY1 = j - c;
-//					int tempY2 = j + c;
+//				
+//			
+//					int tempX1 = i - k;
+//					int tempX2 = i + k;
+//					int tempY1 = j - k;
+//					int tempY2 = j + k;
 //
 //					if (tempX1 < 1) {
 //						tempX1 = 1;
@@ -59,12 +61,12 @@
 //						tempY2 = m;
 //					}
 //
-//					int tmpp = 2 * c * c + 2 * c + 1;
+//					int tmpp = 2 * k * k + 2 * k + 1;
 //					tmpp = data[i][j] / tmpp;
 //					int cnt = 0;
 //					for (int a = tempX1; a <= tempX2; a++) {
 //						for (int b = tempY1; b <= tempY2; b++) {
-//							if (abs(a - i) + abs(b - j) == c) {
+//							if (abs(a - i) + abs(b - j) <= k) {
 //								tmp[a][b] += tmpp;
 //								//0
 //								cnt++;
@@ -85,8 +87,8 @@
 //							printf("%d ", tmp[i][j]);
 //						}printf("\n");
 //					}
-//					printf("t: %d, 해당번째칸 : %d(막 칸은 0임), k : %d, 나누는 값 : %d\n", ii, ttttt++ % (n*m) , c, 2 * c * c + 2 * c + 1);
-//				}
+//					printf("t: %d, 해당번째칸 : %d(막 칸은 0임), k : %d, 나누는 값 : %d\n", ii, ttttt % (n * m), k, 2 * k * k + 2 * k + 1);
+//				ttttt++;
 //				
 //
 //			}

@@ -32,7 +32,7 @@
 //
 //    int pop() {
 //        if (isempty() == true)
-//            printf("underflow\n");
+//            return -1;
 //        else
 //            return data[top--];
 //    }
@@ -47,7 +47,7 @@
 //
 //};
 //int n;
-//int data2[10000];
+//int data[10000];
 //int tmp[10000];
 //int main() {
 //
@@ -57,48 +57,31 @@
 //    s1.create(n);
 //
 //    for (int i = 1; i <=n; i++) {
-//        scanf_s("%d", &data2[i]);
+//        scanf_s("%d", &data[i]);
 //
 //        if (i == 1) {
-//            s1.push(data2[i]);
+//            s1.push(i);
 //            printf("0 ");
 //        }
 //        else {
-//            int cnt = 1;
+//            
 //            while (true) {
-//                if (i == 2) {
-//                
-//                 
-//                
-//                }
-//
-//                if (cnt >= i) {
+//                if (s1.peek() == -1) {
+//                    s1.push(i);
 //                    printf("0 ");
 //                    break;
 //                }
 //
-//                if (s1.peek() <=data2[i]) {
-//                    tmp[cnt++] = s1.peek();
+//                if (data[s1.peek()] <=data[i]) {        
 //                    s1.pop();
 //                }
 //                else {
+//                    printf("%d ",s1.peek());
+//                    s1.push(i);
 //                    break;
 //                }
-//
-//                
 //            }
-//            while (true) {
-//                if (cnt == 1) {
-//                    break;
-//                }
-//                else {
-//                    s1.push(data2[--cnt]);
-//                }
-//            }
-//            int temp = i - cnt;
-//
-//            printf("%d ", temp);
-//        }      
+//        }
 //    }
 //    return 0;
 //}

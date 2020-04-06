@@ -197,6 +197,7 @@
     <ClCompile Include="prosject.cpp" />
     <ClCompile Include="que.cpp" />
     <ClCompile Include="quickSort.cpp" />
+    <ClCompile Include="rectangle.cpp" />
     <ClCompile Include="represttValue.cpp" />
     <ClCompile Include="seat.cpp" />
     <ClCompile Include="sectionUnion.cpp" />
@@ -224,6 +225,7 @@
     <ClCompile Include="test2-4.cpp" />
     <ClCompile Include="test2-6.cpp" />
     <ClCompile Include="test2-7.cpp" />
+    <ClCompile Include="test2-8.cpp" />
     <ClCompile Include="test2.cpp" />
     <ClCompile Include="test2_5.cpp" />
     <ClCompile Include="test3.cpp" />

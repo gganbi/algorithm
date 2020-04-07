@@ -164,6 +164,7 @@
     <ClCompile Include="course3Aattackrange.cpp" />
     <ClCompile Include="dessert.cpp" />
     <ClCompile Include="dfs.cpp" />
+    <ClCompile Include="dfsAndBfs.cpp" />
     <ClCompile Include="diceGame.cpp" />
     <ClCompile Include="divideAndConquer.cpp" />
     <ClCompile Include="division.cpp" />

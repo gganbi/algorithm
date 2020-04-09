@@ -4,39 +4,41 @@
 //
 //using namespace std;
 //
-//const int max = 100;
+//
 //int n, r; //정점 간선
-//vector <int> myGrapgh[max];
-//bool visited[max];
+//vector <int> myGrapgh[100];
+//bool visited[100];
 //
 //int cnt[100];
 //
 //
+//int max=0;
+//
 //void dfs(int x) {
 //	visited[x] = true;
 //
-//	cnt[x]++;
-//
-//	if (x == r) {
 //	
-//		return;
-//	}
-//
-//	
-//	
-//	//printf("%d\n", x);
+//	int temp = 0;
 //	for (int i = 0; i < myGrapgh[x].size(); i++) {
 //		int y = myGrapgh[x][i];
 //		//x와 y가 연결됨
 //		if (visited[y] == false) {
-//			
-//		
-//				dfs(y);
-//			
+//			dfs(y);
+//			if (cnt[x] <= cnt[y] + 1) {
+//				cnt[x] = cnt[y] + 1;
+//			}	
+//		}
+//		else {
+//			temp++;
 //
-//			
 //		}
 //	}
+//	if (temp == myGrapgh[x].size()) {
+//		cnt[x] = 0;
+//	}
+//	
+//	//아무것도 만난점이없는 끝점일때 or 다 돌았을때
+//
 //
 //}
 //int main() {
@@ -51,9 +53,9 @@
 //		myGrapgh[b].push_back(a);
 //	}
 //
-//	for (int i = 0; i <= n; i++) {
-//		dfs(i);
-//	}
-//	
+//	dfs(r);
+//
+//	printf("%d", cnt[r]);
+//
 //
 //}

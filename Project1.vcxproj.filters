@@ -330,5 +330,11 @@
     <ClCompile Include="dfsAndBfs.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2colorMake.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="beadGame.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

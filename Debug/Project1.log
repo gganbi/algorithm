@@ -1,2 +1,5 @@
-﻿  test2-8.cpp
+﻿  2colorMake.cpp
+C:\Users\김성민\source\repos\Test\Project1\2colorMake.cpp(28,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  bfs.cpp
+  코드를 생성하고 있습니다...
   Project1.vcxproj -> C:\Users\김성민\source\repos\Test\Debug\Project1.exe

@@ -139,12 +139,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2chsicDap.cpp" />
+    <ClCompile Include="2colorMake.cpp" />
     <ClCompile Include="Adjacent list.cpp" />
     <ClCompile Include="Adjacent matrix .cpp" />
     <ClCompile Include="array1.cpp" />
     <ClCompile Include="array2.cpp" />
     <ClCompile Include="array3.cpp" />
     <ClCompile Include="basballGame.cpp" />
+    <ClCompile Include="beadGame.cpp" />
     <ClCompile Include="beehive.cpp" />
     <ClCompile Include="bfs.cpp" />
     <ClCompile Include="binarytree.cpp" />

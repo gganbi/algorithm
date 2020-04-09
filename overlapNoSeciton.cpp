@@ -24,34 +24,75 @@
 ////
 ////}
 //
+//
+//int cnt[100001] = { 0, };
+//
+//int tmp[100001] = { 0, };
+//int num[100001] = { 0, };
 //bool check(int start,int end,int interval) {
 //
-//	int cnt[100001] = { 0, };
 //	
+//
+//	 for (int i = 0; i <= 100000; i++) {
+//		 cnt[i] = 0;
+//		 tmp[i] = 0;
+//		 num[i] = 0;
+//	 }
+//
 //	bool test = false;
+//	int tt = 0;
 //	for (int i = 1; i <= interval; i++) {
 //		cnt[data[i]]++;
 //		if (cnt[data[i]] >= 2) {
 //			test = true;
+//		
+//			tmp[data[i]] = cnt[data[i]];
+//
+//			if (num[data[i]] == 0) {
+//				num[data[i]] = 2;
+//			}
+//			else {
+//				num[data[i]]++; //data[i] 숫자의 갯수
+//			}
+//			
 //		}
 //	}
+//	int sum = 0; //여기가문제임 동일 data[i]에대해 여러번 더해짐
+//	for (int i = 1; i <= interval; i++) {
+//		if (num[data[i]] >= 2) {
+//			sum += tmp[data[i]];
+//			num[data[i]] = 0;
+//		}	
+//	}
+//
 //	if (test == false) {
 //		return true;
 //	}
 //
+//	
+//
+//
 //	for (int i = 1; i <= n-interval; i++) {
 //		
 //		test = false;
-//		cnt[data[i]]--;
-//		cnt[data[i+interval]]++;
-//
-//		for (int j = i+1; j <= i+interval; j++) {
-//
-//			if (cnt[data[j]] >= 2) {
-//				test = true;
-//			}
+//		if (cnt[data[i]] >= 3) {
+//			sum = sum - 1;
+//		}else if (cnt[data[i]] == 2) {
+//			sum = sum -2;
 //		}
-//		if (test == false) {
+//		cnt[data[i]]--;
+//		
+//		cnt[data[i + interval]]++;
+//
+//		if (cnt[data[i + interval]] == 2) {
+//			sum = sum + 2;
+//		}else if (cnt[data[i + interval]] >= 2) {
+//			sum = sum + 1;
+//		}
+//		
+//		
+//		if (sum == 0) {
+//		
 //			return true;
 //		}
 //	}
@@ -98,6 +139,7 @@
 //			}
 //		}
 //
+//		
 //		if (check(start,end,mid) == false) {		
 //			end = mid - 1;
 //		}

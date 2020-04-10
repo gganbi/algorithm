@@ -140,8 +140,10 @@
   <ItemGroup>
     <ClCompile Include="2chsicDap.cpp" />
     <ClCompile Include="2colorMake.cpp" />
+    <ClCompile Include="2colorMakeBfs.cpp" />
     <ClCompile Include="Adjacent list.cpp" />
     <ClCompile Include="Adjacent matrix .cpp" />
+    <ClCompile Include="airFresh.cpp" />
     <ClCompile Include="array1.cpp" />
     <ClCompile Include="array2.cpp" />
     <ClCompile Include="array3.cpp" />
@@ -152,6 +154,7 @@
     <ClCompile Include="binarytree.cpp" />
     <ClCompile Include="bingo.cpp" />
     <ClCompile Include="cardGame.cpp" />
+    <ClCompile Include="cardGamecpp.cpp" />
     <ClCompile Include="chebyshevtheo.cpp" />
     <ClCompile Include="circleQue.cpp" />
     <ClCompile Include="classpresident.cpp" />
@@ -244,6 +247,7 @@
     <ClCompile Include="treeHigh.cpp" />
     <ClCompile Include="treesDistance.cpp" />
     <ClCompile Include="treeSlice.cpp" />
+    <ClCompile Include="twoGraphDfs.cpp" />
     <ClCompile Include="twoLiquid.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

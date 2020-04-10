@@ -13,38 +13,31 @@
 //int pushCheck[10001] = { 0, }; // trul¸é »öÄ¥ÀÌµÊ
 //
 //bool last = false;
+//int cnt = 0;
 //
 //void BFS() {
 //
 //	queue<int> Queue;
 //	Queue.push(0);
 //	check[0] = true;
-//	while (Queue.empty() == false) {
+//	pushCheck[0] = cnt++;
+//	while (Queue.empty()==false) {
 //
 //		int current = Queue.front();
 //		Queue.pop();
 //
+//		
 //		printf("%d ", current); //current¹æ¹®ÇÔ
 //		for (int i = 0; i < myGraph[current].size(); i++) {
 //			int next = myGraph[current][i];
 //
-//
-//			if (pushCheck[next] == 0) {
-//				pushCheck[next] = next;
-//			}
-//			else {
-//				last = true;
-//
-//				printf("dddddddddddd");
-//				return;
-//			}
 //			if (check[next] == false) {
 //				check[next] = true;
-//	
 //				Queue.push(next);
-//			
+//				
 //			}
 //		}
+//		cnt++;
 //	}
 //}
 //

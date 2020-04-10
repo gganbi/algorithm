@@ -348,5 +348,20 @@
     <ClCompile Include="twoGraphDfs.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="twoGraphBfs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="warmBirusDfs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="warmBirusBfs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="numberAttack.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="numberAttackBfs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

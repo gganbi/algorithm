@@ -193,6 +193,8 @@
     <ClCompile Include="mountail.cpp" />
     <ClCompile Include="nextnum.cpp" />
     <ClCompile Include="nnDan.cpp" />
+    <ClCompile Include="numberAttack.cpp" />
+    <ClCompile Include="numberAttackBfs.cpp" />
     <ClCompile Include="numberBox.cpp" />
     <ClCompile Include="numberCount.cpp" />
     <ClCompile Include="numberMake.cpp" />
@@ -247,8 +249,11 @@
     <ClCompile Include="treeHigh.cpp" />
     <ClCompile Include="treesDistance.cpp" />
     <ClCompile Include="treeSlice.cpp" />
+    <ClCompile Include="twoGraphBfs.cpp" />
     <ClCompile Include="twoGraphDfs.cpp" />
     <ClCompile Include="twoLiquid.cpp" />
+    <ClCompile Include="warmBirusBfs.cpp" />
+    <ClCompile Include="warmBirusDfs.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

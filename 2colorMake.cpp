@@ -1,62 +1,77 @@
 //#include<cstdio>
-//#include <vector>
-//#include <queue>
+//#include<vector>
 //
+//
+//
+//// 9 12
+//// 1 2
+//// 1 3
+//// 2 3
+//// 2 4
+//// 2 6
+//// 3 7
+//// 4 5
+//// 4 7
+//// 4 8
+//// 5 6
+//// 7 8
+//// 8 9
 //using namespace std;
 //
-//int n, m;
-//vector <int> myGraph[100];
+//const int max = 100;
+//int n, m; //정점 간선
+//vector <int> myGrapgh[max];
+//bool visited[max];
 //
+//int color[100];
 //
-//bool check[100] = { 0, }; // trul면 색칠이됨
+//bool flag = false;
+//int g = 1;
 //
-//int pushCheck[10001] = { 0, }; // trul면 색칠이됨
+//void DFS(int x) {
+//	visited[x] = true;
+//	color[x] = g;
 //
-//bool last = false;
-//int cnt = 0;
+//	//printf("%d\n", x);
+//	int tt = g;
+//	for (int i = 0; i < myGrapgh[x].size(); i++) {
+//		int y = myGrapgh[x][i];
+//		//x와 y가 연결됨
 //
-//void BFS() {
+//		if (visited[y] == true && color[x] == color[y]) {
 //
-//	queue<int> Queue;
-//	Queue.push(0);
-//	check[0] = true;
-//	pushCheck[0] = cnt++;
-//	while (Queue.empty()==false) {
+//			flag = true;
 //
-//		int current = Queue.front();
-//		Queue.pop();
-//
-//		
-//		printf("%d ", current); //current방문함
-//		for (int i = 0; i < myGraph[current].size(); i++) {
-//			int next = myGraph[current][i];
-//
-//			if (check[next] == false) {
-//				check[next] = true;
-//				Queue.push(next);
-//				
-//			}
 //		}
-//		cnt++;
+//
+//		if (visited[y] == false) {
+//
+//			if (tt == 1) {
+//				g = 2;
+//			}
+//			else {
+//				g = 1;
+//			}
+//			DFS(y);
+//		}
 //	}
+//
 //}
-//
-//
 //int main() {
 //
 //	scanf_s("%d %d", &n, &m);
+//
 //	for (int i = 0; i < m; i++) {
 //		int a, b;
 //		scanf_s("%d %d", &a, &b);
 //
-//		myGraph[a].push_back(b);
-//		myGraph[b].push_back(a);
-//
+//		myGrapgh[a].push_back(b);
+//		myGrapgh[b].push_back(a);
 //	}
 //
-//	BFS();
+//	DFS(0);
 //
-//	if (last == true) {
+//	if (flag == true) {
 //		printf("NO");
 //	}
 //	else {
@@ -65,10 +80,3 @@
 //
 //
 //}
-//
-//
-//
-////.push(x)  x를 큐사입
-//// .pop() 큐의 맨 앞에 있는 원소 제거
-//// .front 맨앞에 잇는 원서 반환
-//// empty 비어있으면 true 반환

@@ -236,6 +236,11 @@
     <ClCompile Include="test2-8.cpp" />
     <ClCompile Include="test2.cpp" />
     <ClCompile Include="test2_5.cpp" />
+    <ClCompile Include="test3-1cpp.cpp" />
+    <ClCompile Include="test3-2.cpp" />
+    <ClCompile Include="test3-3.cpp" />
+    <ClCompile Include="test3-4.cpp" />
+    <ClCompile Include="test3-5.cpp" />
     <ClCompile Include="test3.cpp" />
     <ClCompile Include="test4.cpp" />
     <ClCompile Include="test5.cpp" />

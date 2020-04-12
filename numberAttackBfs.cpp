@@ -5,40 +5,30 @@
 //using namespace std;
 //
 //vector<int> myGrape[100];
-//int dataa[100][100] = {0,};
-//bool check[100] = { false ,};
 //
+//int dataa[100][100] = {0,};
 //int result[100] = { 0, };
 //int cntt = 1;
 //
 //int n;
 //
 //
-//int bfs(int x) {
-//	queue<int> Que;
+//int bfs(int x,int y) {
+//	queue<vector<int>> Que;
 //
-//	Que.push(x);
-//	check[x] = true;
+//	myGrape[x].push_back(y);
+//	myGrape[y].push_back(x);
+//	Que.push(myGrape[x]);
+//	Que.push(myGrape[y]);
+//	
+//	dataa[x][y] = 0;
+//	int cnt = 1;
 //
 //	while (!Que.empty()) {
-//	
-//		int temp = Que.front();
-//		Que.pop();
 //
-//		for (int i = 0; i < myGrape[temp].size(); i++) {
-//			
-//			int tmp = myGrape[temp][i];
-//			if (check[tmp] == false) {
-//				check[tmp] = true;
-//				Que.push(tmp);
-//				
-//			}
-//
-//		}
+//		vector<int> current = Que.front();
+//		
 //	}
-//
-//
-//
 //
 //}
 //

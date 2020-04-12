@@ -1,90 +1,82 @@
-//#include<cstdio>
+//#include <cstdio>
 //#include <vector>
 //#include <queue>
 //
 //using namespace std;
 //
-//int n,m;
-//vector <int> myGraph[100];
+//bool check[100];
+//vector<int> myGraph[100];
 //
+//int node[100] = {0,};
 //
-//bool check[100] = { 0, }; // trul면 색칠이됨
-//
-//int firstVisited[100] = { 0, };
+//int n,m, a, b;
 //
 //bool flag = false;
 //
-//void BFS() {
+//void bfs(int y) {
 //
-//	queue<int> Queue;
-//	Queue.push(1);
+//	queue<int> que;
+//	que.push(1);
 //	check[1] = true;
-//	firstVisited[1] = 1;
-//	int y = 1;
-//	while (Queue.empty()==false) {
+//	node[1] = y;
 //
-//		int current = Queue.front();
-//		Queue.pop();
+//	while (que.empty() != true) {
+//	
+//		int current = que.front();
+//		que.pop();
 //
-//	//	printf("%d ", current); //current방문함
-//	
-//	
-//		
 //		for (int i = 0; i < myGraph[current].size(); i++) {
-//			int next = myGraph[current][i];
 //
-//			if (check[next]==true && firstVisited[next] == firstVisited[current]) {
+//			int next = myGraph[current][i];		
+//
+//			
+//
+//			if (check[next] == true && node[current] == node[next]) {
 //				flag = true;
 //				return;
 //			}
+//			int yy;
 //
-//			int tmp;
-//			if (firstVisited[current] == 1) {
-//				tmp = 2;
+//			if (node[current] == 1) {
+//				yy = 2;
 //			}
 //			else {
-//				tmp = 1;
+//				yy = 1;
 //			}
 //			
 //			if (check[next] == false) {
-//				
+//				node[next] = yy;
 //				check[next] = true;
-//				Queue.push(next);
-//				firstVisited[next] = tmp;		
+//				que.push(next);
 //			}
 //		}
-//		
 //	}
-//}
 //
+//}
 //
 //int main() {
+//	scanf_s("%d %d",&n,&m);
 //
-//	scanf_s("%d %d", &n, &m);
-//	for (int i = 0; i < m; i++) {
-//		int a, b;
+//	for (int i = 1; i <= m; i++) {
 //		scanf_s("%d %d", &a, &b);
-//
 //		myGraph[a].push_back(b);
 //		myGraph[b].push_back(a);
-//	
 //	}
 //
-//	BFS();
+//	bfs(1);
+//
 //
 //	if (flag == true) {
-//				printf("No");
-//			}
-//			else {
-//				printf("Yes");
-//			}
+//
+//		printf("NO");
+//
+//	}
+//	else {
+//		printf("YES");
+//	}
+//
+//	return 0;
+//
 //
 //
 //}
-//
-//
-//
-////.push(x)  x를 큐사입
-//// .pop() 큐의 맨 앞에 있는 원소 제거
-//// .front 맨앞에 잇는 원서 반환
-//// empty 비어있으면 true 반환

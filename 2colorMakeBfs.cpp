@@ -1,55 +1,85 @@
-//#include<cstdio>
-//#include<vector>
+//#include <cstdio>
+//#include <vector>
+//#include <queue>
 //
-//
-//
-//// 9 12
-//// 1 2
-//// 1 3
-//// 2 3
-//// 2 4
-//// 2 6
-//// 3 7
-//// 4 5
-//// 4 7
-//// 4 8
-//// 5 6
-//// 7 8
-//// 8 9
 //using namespace std;
 //
-//const int max = 100;
-//int n, m; //정점 간선
-//vector <int> myGrapgh[max];
-//bool visited[max];
+//bool check[100001];
+//vector<int> myGraph[100001];
 //
+//int node[100001] = {0,};
 //
-//void DFS(int x) {
-//	visited[x] = true;
+//int n,m, a, b;
+//
+//bool flag = false;
+//
+//void bfs(int y) {
+//
+//	queue<int> que;
+//	que.push(0);
+//	check[0] = true;
+//	node[0] = y;
+//
+//	while (que.empty() != true) {
 //	
-//	printf("%d\n", x);
-//	for (int i = 0; i < myGrapgh[x].size(); i++) {
-//		int y = myGrapgh[x][i];
-//		//x와 y가 연결됨
-//		if (visited[y] == false) {
-//			DFS(y);
+//		int current = que.front();
+//		que.pop();
+//
+//		for (int i = 0; i < myGraph[current].size(); i++) {
+//
+//			int next = myGraph[current][i];		
+//
+//			
+//
+//			if (check[next] == true && node[current] == node[next]) {
+//				flag = true;
+//				return;
+//			}
+//			int yy;
+//
+//			if (node[current] == 1) {
+//				yy = 2;
+//			}
+//			else {
+//				yy = 1;
+//			}
+//			
+//			if (check[next] == false) {
+//				node[next] = yy;
+//				check[next] = true;
+//				que.push(next);
+//			}
 //		}
 //	}
 //
 //}
-//int main() {
-//	
-//	scanf_s("%d %d", &n, &m);
-//	
-//	for (int i = 0; i < m; i++) {
-//		int a, b;
-//		scanf_s("%d %d", &a, &b);
 //
-//		myGrapgh[a].push_back(b);
-//		myGrapgh[b].push_back(a);
+//int main() {
+//	scanf_s("%d %d",&n,&m);
+//
+//	for (int i = 1; i <= m; i++) {
+//		scanf_s("%d %d", &a, &b);
+//		myGraph[a].push_back(b);
+//		myGraph[b].push_back(a);
 //	}
 //
-//	DFS(0);
-//	
+//	bfs(1);
+//
+//	//for (int i = 0; i < n; i++) {
+//	//	printf("%d ", node[i]);
+//	//}
+//
+//	if (flag == true) {
+//
+//		printf("NO");
+//
+//	}
+//	else {
+//		printf("YES");
+//	}
+//
+//	return 0;
+//
+//
 //
 //}

@@ -1,34 +1,73 @@
 //#include<cstdio>
 //#include<vector>
 //#include<queue>
-//#include<stack>
+//
 //using namespace std;
 //
-//vector<int> myGrape[100];
+//
+//void sort(int arr[], int length) {
+//
+//	for (int i = 1; i <= length - 1; i++) {
+//
+//		for (int j = i + 1; j <= length; j++) {
+//			if (arr[i] >= arr[j]) {
+//				int temp = arr[i];
+//				arr[i] = arr[j];
+//				arr[j] = temp;
+//			}
+//		}
+//	}
+//}
+//
+//
+//vector<int> mygrape[100];
 //
 //int dataa[100][100] = {0,};
 //int result[100] = { 0, };
 //int cntt = 1;
-//
 //int n;
+//struct dd {
+//	int x;
+//	int y;
+//};
 //
+//int dx[4] = { 0,0,-1,1 };
+//int dy[4] = { -1,1,0,0 };
+//int cnt = 1;
 //
 //int bfs(int x,int y) {
-//	queue<vector<int>> Que;
+//	queue<dd> que;
 //
-//	myGrape[x].push_back(y);
-//	myGrape[y].push_back(x);
-//	Que.push(myGrape[x]);
-//	Que.push(myGrape[y]);
+//	dd dd;
+//	dd.x = x;
+//	dd.y = y;
+//	que.push(dd);
 //	
 //	dataa[x][y] = 0;
-//	int cnt = 1;
+//	
 //
-//	while (!Que.empty()) {
+//	while (!que.empty()) {
 //
-//		vector<int> current = Que.front();
+//		dd current = que.front();
+//		que.pop();
+//
+//		for (int i = 0; i < 4; i++) {
 //		
+//			int xx = current.x+dx[i];
+//			int yy = current.y+dy[i];
+//
+//			if (dataa[xx][yy] == 1) {
+//				cnt++;
+//				dataa[xx][yy] = 0;
+//				dd temp;
+//				temp.x = xx;
+//				temp.y = yy;
+//				que.push(temp);
+//			}
+//		}	
 //	}
+//
+//	return cnt;
 //
 //}
 //
@@ -42,17 +81,11 @@
 //			scanf_s("%1d",&dataa[i][j]);
 //		}
 //	}
-//	printf("\n");
 //
 //	for (int i = 1; i <= n; i++) {
 //		for (int j = 1; j <= n; j++) {
-//			printf("%d ",dataa[i][j]);
-//		}printf("\n");
-//	}
-//
-//	for (int i = 1; i <= n; i++) {
-//		for (int j = 1; j <= n; j++) {
-//			if (dataa[i][j] != 0) {		
+//			if (dataa[i][j] != 0) {	
+//				cnt = 1;
 //				result[cntt++] = bfs(i,j);
 //			}
 //		}
@@ -69,18 +102,4 @@
 //
 //	
 //
-//}
-//
-//void sort(int arr[], int length) {
-//
-//	for (int i = 1; i <= length - 1; i++) {
-//
-//		for (int j = i + 1; j <= length; j++) {
-//			if (arr[i] >= arr[j]) {
-//				int temp = arr[i];
-//				arr[i] = arr[j];
-//				arr[j] = temp;
-//			}
-//		}
-//	}
 //}

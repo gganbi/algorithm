@@ -3,7 +3,9 @@
 //
 //int n, m, k, t;
 //
-//int data[1001][1001] = { 0, };
+//int dataX[110]= { 0, };
+//int dataY[110] = { 0, };
+//int dataD[110] = { 0, };
 //
 //int main() {
 //
@@ -11,70 +13,118 @@
 //
 //	for (int i = 1; i <= k; i++) {
 //		int y, x, d;
-//		scanf_s("%d %d %d %d", &y, &x, &d);
-//
-//		
-//	
-//		if (d == 0 || d == 1) {  //상  하
-//
-//			t = t%(n * 2 - 2);
-//			while (true) {
-//
-//				if (d == 0) {
-//
-//				}
-//				else {
-//
-//				}
-//
-//			}
-//
-//		}
-//
-//		else if (d == 2 || d == 3) { //좌 우
-//
-//			t = t%(m * 2 - 2);
-//
-//			if (d == 2) {
-//				if (x > t) {
-//					x = x - t;
-//				}
-//				else {
-//					if (y-1+m-1<=t) { //한번바뀜
-//						d = 3;
-//						x = 1+ t - (x - 1);	
-//					}
-//					else {  //한번 더 바뀜
-//
-//						// t가 6이상인경우 
-//						x = m - (y - 1 + m - 1 - m);
-//						d = 2;
-//					}
-//				}
-//			}
-//			else {
-//				
-//				if (x + t <= m) {
-//					x = x + t;
-//				}
-//				else {
-//					
-//					if(m-x-1+m<=t){
-//						d = 2;
-//						t=m-x-1
-//					}
-//					else {
-//					
-//					}
-//
-//
-//				}
-//
-//			}
-//		}
-//			
-//
-//
+//		scanf_s("%d %d %d", &y, &x, &d);	
+//		dataY[i] = y;
+//		dataX[i] = x;
+//		dataD[i] = d;
 //	}
+//
+//
+//	for (int i = 1; i <= t; i++) {
+//		
+//		for (int j = 1; j <= k; j++) {
+//			if (dataD[j] == 0) { //상
+//				int temp = dataY[j];
+//				if (dataY[j] == 1) {
+//					dataY[j]++;
+//					dataD[j] = 1;
+//				}
+//				else {
+//					dataY[j]--;
+//				}
+//
+//				for (int q = 1; q <= k; q++) {  //자기랑똑같은위치에 있는애 찾기
+//					if (j != q) {
+//						if ((temp == dataY[q]) && (dataX[j] == dataX[q])) {
+//							if (dataY[q] == 1) {
+//								dataY[q]++;
+//								//dataD[q] = 1;
+//							}
+//							else {
+//								dataY[q]--;
+//							}
+//						}
+//					}
+//				}
+//			}
+//			else if (dataD[j] == 1) { //하
+//				int temp = dataY[j];
+//				if (dataY[j] == n) {
+//					dataY[j]--;
+//					dataD[j] = 0;
+//				}
+//				else {
+//					dataY[j]++;
+//				}
+//
+//				for (int q = 1; q <= k; q++) {  //자기랑똑같은위치에 있는애 찾기
+//					if (j != q) {
+//						if ((temp == dataY[q]) && (dataX[j] == dataX[q])) {
+//							if (dataY[q] == n) {
+//								dataY[q]--;
+//								//dataD[q] = 0;
+//							}
+//							else {
+//								dataY[q]++;
+//							}
+//						}
+//					}
+//				}
+//			}
+//			else if (dataD[j] == 2) {//좌
+//				int temp = dataX[j];
+//				if (dataX[j] == 1) {
+//					dataX[j]++;
+//					dataD[j] = 3;
+//				}
+//				else {
+//					dataX[j]--;
+//				}
+//				for (int q = 1; q <= k; q++) {  //자기랑똑같은위치에 있는애 찾기
+//					if (j != q) {
+//						if ((temp == dataX[q]) && (dataY[j] == dataY[q])) {
+//							if (dataX[q] == 1) {
+//								dataX[q]++;
+//								//dataD[q] = 3;
+//							}
+//							else {
+//								dataX[q]--;
+//							}
+//						}
+//					}
+//				}
+//			}
+//			else if (dataD[j] == 3) { // 우
+//				int temp = dataX[j];
+//				if (dataX[j] == m) {
+//					dataX[j]--;
+//					dataD[j] = 2;
+//				}
+//				else {
+//					dataX[j]++;
+//				}
+//				for (int q = 1; q <= k; q++) {  //자기랑똑같은위치에 있는애 찾기
+//					if (j != q) {
+//						if ((temp == dataX[q]) && (dataY[j] == dataY[q])) {
+//							if (dataX[q] == m) {
+//								dataX[q]--;
+//								//dataD[q] = 2;
+//							}
+//							else {
+//								dataX[q]++;
+//							}
+//						}
+//					}
+//				}
+//			}
+//		}
+//	}
+//
+//	for (int i = 1; i <= k; i++) {
+//
+//		printf("%d %d\n", dataY[i], dataX[i]);
+//	
+//	}
+//
 //
 //}

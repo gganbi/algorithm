@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -155,6 +155,7 @@
     <ClCompile Include="bingo.cpp" />
     <ClCompile Include="cardGame.cpp" />
     <ClCompile Include="cardGamecpp.cpp" />
+    <ClCompile Include="carpenterMirrorEscapeBfs.cpp" />
     <ClCompile Include="chebyshevtheo.cpp" />
     <ClCompile Include="circleQue.cpp" />
     <ClCompile Include="classpresident.cpp" />
@@ -171,6 +172,7 @@
     <ClCompile Include="dfs.cpp" />
     <ClCompile Include="dfsAndBfs.cpp" />
     <ClCompile Include="diceGame.cpp" />
+    <ClCompile Include="diseaseBfs.cpp" />
     <ClCompile Include="divideAndConquer.cpp" />
     <ClCompile Include="division.cpp" />
     <ClCompile Include="dynamicAlgorithm.cpp" />
@@ -190,7 +192,9 @@
     <ClCompile Include="matrix1.cpp" />
     <ClCompile Include="matrix2.cpp" />
     <ClCompile Include="mine.cpp" />
+    <ClCompile Include="mirrorFind.cpp" />
     <ClCompile Include="mountail.cpp" />
+    <ClCompile Include="moveAlgorithm2.cpp" />
     <ClCompile Include="nextnum.cpp" />
     <ClCompile Include="nnDan.cpp" />
     <ClCompile Include="numberAttack.cpp" />
@@ -198,6 +202,8 @@
     <ClCompile Include="numberBox.cpp" />
     <ClCompile Include="numberCount.cpp" />
     <ClCompile Include="numberMake.cpp" />
+    <ClCompile Include="oddCarcurator.cpp" />
+    <ClCompile Include="onedimensionLageMove.cpp" />
     <ClCompile Include="overlapNoSeciton.cpp" />
     <ClCompile Include="pfactorization.cpp" />
     <ClCompile Include="power.cpp" />
@@ -241,6 +247,7 @@
     <ClCompile Include="test3-3.cpp" />
     <ClCompile Include="test3-4.cpp" />
     <ClCompile Include="test3-5.cpp" />
+    <ClCompile Include="test3-6.cpp" />
     <ClCompile Include="test3.cpp" />
     <ClCompile Include="test4.cpp" />
     <ClCompile Include="test5.cpp" />
@@ -254,6 +261,7 @@
     <ClCompile Include="treeHigh.cpp" />
     <ClCompile Include="treesDistance.cpp" />
     <ClCompile Include="treeSlice.cpp" />
+    <ClCompile Include="twoDimensionLargeMove.cpp" />
     <ClCompile Include="twoGraphBfs.cpp" />
     <ClCompile Include="twoGraphDfs.cpp" />
     <ClCompile Include="twoLiquid.cpp" />

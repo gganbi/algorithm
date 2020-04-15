@@ -177,6 +177,8 @@
     <ClCompile Include="division.cpp" />
     <ClCompile Include="dynamicAlgorithm.cpp" />
     <ClCompile Include="eightnine.cpp" />
+    <ClCompile Include="examTest1.cpp" />
+    <ClCompile Include="examTest2.cpp" />
     <ClCompile Include="factorialBinary.cpp" />
     <ClCompile Include="fibonacci.cpp" />
     <ClCompile Include="findprime.cpp" />

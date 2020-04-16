@@ -179,6 +179,7 @@
     <ClCompile Include="eightnine.cpp" />
     <ClCompile Include="examTest1.cpp" />
     <ClCompile Include="examTest2.cpp" />
+    <ClCompile Include="examTest3.cpp" />
     <ClCompile Include="factorialBinary.cpp" />
     <ClCompile Include="fibonacci.cpp" />
     <ClCompile Include="findprime.cpp" />

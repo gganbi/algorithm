@@ -1,50 +1,43 @@
 //#include<cstdio>
-//#include<queue>
 //#include<vector>
-//
 //using namespace std;
-//
-//
-//vector<int> myGraph[100010];
-//bool check[100010];
 //
 //int n, m;
 //
-//void bfs() {
-//	queue<int> Que;
-//	Que.push(0);
-//	check[0]=true;
-//	while (!Que.empty()) {
-//		int current = Que.front();
-//		Que.pop();
-//		printf("%d\n", current);
-//		for (int i = 0; i < myGraph[current].size(); i++) {
-//			int next = myGraph[current][i];
-//			if (check[next] == false) {
-//				check[next] = true;
-//				Que.push(next);
-//			}
+//vector<int> myGraph[1010];
+//
+//bool check[1010] = { false, };
+//
+//void dfs(int x) {
+//
+//	check[x] = true;
+//	printf("%d",x);
+//	
+//	for (int i = 0; i < myGraph[x].size(); i++) {
+//	
+//		int cur = myGraph[x][i];
+//		
+//		if (check[cur] == false) {
+//
+//			dfs(cur);
 //		}
 //	}
-//}
 //
+//
+//
+//}
 //int main() {
 //
 //	scanf_s("%d %d", &n, &m);
 //
-//	for (int i = 0; i < m; i++) {
-//	
+//	for (int i = 1; i <= m; i++) {
 //		int a, b;
-//
 //		scanf_s("%d %d", &a, &b);
 //
 //		myGraph[a].push_back(b);
 //		myGraph[b].push_back(a);
 //	}
 //
-//	bfs();
-//
-//	return 0;
-//
+//	dfs(0);
 //
 //}

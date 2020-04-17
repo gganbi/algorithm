@@ -411,5 +411,20 @@
     <ClCompile Include="examTest3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="swPractice1Cheeze.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="swPractice2Robot.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="swPractice3Tomato.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="swPractice4SLIKARcpp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="swPractice5ICEBERG.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -426,5 +426,17 @@
     <ClCompile Include="swPractice5ICEBERG.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="test4-1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="test4-2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="test4-3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="test4-4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -11,8 +11,8 @@
 //int firstX, firstY, firstD;
 //int lastX, lastY, lastD;
 //
-//int dx[5] = { 0,1,-1,0,0 };
-//int dy[5] = { 0,0,0,1,-1 };
+//int dx[5] = { 0,0,0,1,-1 };
+//int dy[5] = { 0,1,-1,0,0 };
 //
 //int cnt = 0;
 //

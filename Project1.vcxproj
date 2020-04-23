@@ -234,6 +234,7 @@
     <ClCompile Include="stringMinus.cpp" />
     <ClCompile Include="stringMultiple.cpp" />
     <ClCompile Include="stringPressior.cpp" />
+    <ClCompile Include="swPractice1.cpp" />
     <ClCompile Include="swPractice1Cheeze.cpp" />
     <ClCompile Include="swPractice2Robot.cpp" />
     <ClCompile Include="swPractice3Tomato.cpp" />

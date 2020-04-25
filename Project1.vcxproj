@@ -199,6 +199,7 @@
     <ClCompile Include="mountail.cpp" />
     <ClCompile Include="moveAlgorithm2.cpp" />
     <ClCompile Include="moveAlgorithm3.cpp" />
+    <ClCompile Include="moveAlgorithm4.cpp" />
     <ClCompile Include="nextnum.cpp" />
     <ClCompile Include="nnDan.cpp" />
     <ClCompile Include="numberAttack.cpp" />

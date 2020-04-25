@@ -1,169 +1,220 @@
 //#include<cstdio>
-//#include <stack>
-//#include <queue>
+//#include<queue>
 //
 //using namespace std;
 //
-//
-//int b[110][110][110] = { 0, };
-//int a[110][110][110] = { 0, };
 //int n, m, h;
+//
+//int dataa[200][200][200];
+//
+//struct dataset {
+//	int x;
+//	int y;
+//	int z;
+//	int cnt;
+//};
+//
 //int dx[6] = { -1,1,0,0,0,0 };
-//int dy[6] = { 0,0,-1,1,0,0 };
+//int dy[6] = { 0,0,-1,1,0,0, };
 //int dz[6] = { 0,0,0,0,1,-1 };
 //
-//int cnt = 0;
+//void bfs() {
+//	queue<dataset> myQue;
 //
-//int impossible = 1;
-//int main() {
-//
-//
+//	for (int i = 1; i <= h; i++) {
+//		for (int j = 1; j <= n; j++) {
+//			for (int k = 1; k <= m; k++) {
+//				if (dataa[j][k][i] == 1) {
+//					dataset first;
+//					first.x = j;
+//					first.y = k;
+//					first.z = i;
+//					first.cnt = 0;
+//					myQue.push(first);;
+//				}
+//			}
+//		}
+//	}
 //	
 //
-//	scanf_s("%d %d %d", &m,&n,&h);
 //
-//	bool first = false;
-//	for (int ii = 1; ii <= h; ii++) {
-//		for (int i = 1; i <= n; i++) {
-//			for (int j = 1; j <= m; j++) {
-//				scanf_s("%d",&b[i][j][ii]);
-//				if (b[i][j][ii] == 0) {
-//					first = true;
-//					b[i][j][ii] = 100;
-//				}
-//				a[i][j][ii] = b[i][j][ii];
-//			}
-//		}
-//	}
+//	while (!myQue.empty()) {
 //
-//	if (first == false) {  //첫처장케이스 처리함
+//		dataset cur = myQue.front();
+//		myQue.pop();
 //
-//		printf("0");
-//		return 0;
-//	}
+//		for (int i = 0; i < 6; i++) {
 //
-//	//여기서부터 와일문시작
+//			int xx = cur.x + dx[i];
+//			int yy = cur.y + dy[i];
+//			int zz = cur.z + dz[i];
 //
-//	while (true) {
-//
-//		cnt++;
-//		bool flag = false;
-//
-//		for (int ii = 1; ii <= h; ii++) {
-//			for (int i = 1; i <= n; i++) {
-//				for (int j = 1; j <= m; j++) {
-//					if (b[i][j][ii] == 1) {
-//						//for (int jj = 0; jj < 6; jj++) {
-//							int x = i + dx[0];
-//							int y = j + dy[0];
-//							int z = ii + dz[0];
-//							if (b[x][y][z] == 100) {
-//								a[x][y][z] = 1;
-//								flag = true;
-//							}
-//							 x = i + dx[1];
-//							 y = j + dy[1];
-//							 z = ii + dz[1];
-//							if (b[x][y][z] == 100) {
-//								a[x][y][z] = 1;
-//								flag = true;
-//							}
-//							x = i + dx[2];
-//							y = j + dy[2];
-//							z = ii + dz[2];
-//							if (b[x][y][z] == 100) {
-//								a[x][y][z] = 1;
-//								flag = true;
-//							}
-//							x = i + dx[3];
-//							y = j + dy[3];
-//							z = ii + dz[3];
-//							if (b[x][y][z] == 100) {
-//								a[x][y][z] = 1;
-//								flag = true;
-//							}
-//							x = i + dx[4];
-//							y = j + dy[4];
-//							z = ii + dz[4];
-//							if (b[x][y][z] == 100) {
-//								a[x][y][z] = 1;
-//								flag = true;
-//							}
-//							x = i + dx[5];
-//							y = j + dy[5];
-//							z = ii + dz[5];
-//							if (b[x][y][z] == 100) {
-//								a[x][y][z] = 1;
-//								flag = true;
-//							}
-//						
-//						//}
-//					}
-//				}
+//			if (dataa[xx][yy][zz] == 100) {
+//				dataa[xx][yy][zz] = 1;
+//				dataset tmp;
+//				tmp.x = xx;
+//				tmp.y = yy;
+//				tmp.z = zz;
+//				tmp.cnt = cur.cnt + 1;
+//				myQue.push(tmp);
 //			}
 //		}
 //
-//		int cntt = 0;
-//		for (int ii = 1; ii <= h; ii++) {
-//			for (int i = 1; i <= n; i++) {
-//				for (int j = 1; j <= m; j++) {
-//					b[i][j][ii] = a[i][j][ii];
-//
-//					if (a[i][j][ii] == 1) {
-//						cntt++;
-//					}
-//				}
+//		int cnt = 0;
+//		for (int i = 1; i <= h; i++) {
+//			for (int j = 1; j <= n; j++) {
+//				for (int k = 1; k <= m; k++) {
+//					if (dataa[j][k][i] == 1) {
+//						cnt++;
+//					}	
+//				}	
 //			}
 //		}
 //
-//	/*		printf("\n");
-//		for (int ii = 1; ii <= h; ii++) {
-//			for (int i = 1; i <= n; i++) {
-//				for (int j = 1; j <= m; j++) {
-//					printf("%d ", a[i][j][ii]);
+//			printf("\n");
+//
+//		for (int i = 1; i <= h; i++) {
+//			for (int j = 1; j <= n; j++) {
+//				for (int k = 1; k <= m; k++) {
+//					printf("%d ", dataa[j][k][i]);
 //				}
 //				printf("\n");
 //			}
 //			printf("\n");
-//		}*/
-//
-//		
-//	    if (flag == false) { //나머지항부터 한번도 안바겻을때
-//			impossible = 3;
-//		//	printf("222222\n");
-//			break;
 //		}
 //
-//		if (cntt == h * n * m) {
-//			impossible = 1;
-//		//	printf("3333333\n");
-//			break;
+//		if (cnt == m * n * h) {
+//			printf("%d", cur.cnt + 1);
+//			return;
+//		}
+//		
+//
+//	}
+//
+//
+//}
+//int main() {
+//
+//	scanf_s("%d %d %d",&m,&n,&h);
+//
+//	int cnt = 0;
+//	for (int i = 1; i <= h; i++) {
+//		for (int j = 1; j <= n; j++) {
+//		
+//			for (int k = 1; k <= m; k++) {
+//				scanf_s("%d",&dataa[j][k][i]);	
+//				if (dataa[j][k][i] == 0) {
+//					dataa[j][k][i] = 100;
+//					cnt++;
+//				}
+//			}
 //		}
 //	}
-//	
 //
+//	bool check = false;
 //
-//    if (impossible == 3) {
-//		printf("-1");
-//	
+//	if (cnt == 0) {
+//
+//		printf("0");
 //	}
 //	else {
-//		printf("%d", cnt);
+//
+//		printf("\n");
+//
+//		for (int i = 1; i <= h; i++) {
+//			for (int j = 1; j <= n; j++) {
+//				for (int k = 1; k <= m; k++) {
+//					printf("%d ", dataa[j][k][i]);
+//				}
+//				printf("\n");
+//			}
+//			printf("\n");
+//			printf("\n");
+//		}
+//
+//		for (int i = 1; i <= h; i++) {
+//			for (int j = 1; j <= n; j++) {
+//
+//				for (int k = 1; k <= m; k++) {
+//					int cnt = 0;
+//					if (dataa[j][k][i] == 100) {
+//						
+//						/*for (int iii = 0; iii < 6; iii++) {
+//						
+//							int x = j + dx[iii];
+//							int y = k + dy[iii];
+//							int z = i + dz[iii];
+//
+//							if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
+//								cnt++;
+//							}
+//						}*/
+//						int x = j + dx[0];
+//						int y = k + dy[0];
+//						int z = i + dz[0];
+//						if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
+//							cnt++;
+//						}
+//						 x = j + dx[1];
+//						 y = k + dy[1];
+//						 z = i + dz[1];
+//						if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
+//							cnt++;
+//						}
+//						 x = j + dx[2];
+//						 y = k + dy[2];
+//						 z = i + dz[2];
+//						if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
+//							cnt++;
+//						}
+//						 x = j + dx[3];
+//						 y = k + dy[3];
+//						 z = i + dz[3];
+//						if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
+//							cnt++;
+//						}
+//						 x = j + dx[4];
+//						 y = k + dy[4];
+//						 z = i + dz[4];
+//						if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
+//							cnt++;
+//						}
+//						 x = j + dx[5];
+//						 y = k + dy[5];
+//						 z = i + dz[5];
+//						if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
+//							cnt++;
+//						}
+//
+//						
+//					}
+//
+//					if (cnt == 6) {
+//						
+//						check = true;
+//						break;
+//						//return;
+//					}
+//				}
+//
+//				if (check == true) {
+//					break;
+//				}
+//			}
+//			if (check == true) {
+//				break;
+//			}
+//		}
+//
+//		if (check == false) {
+//			bfs();
+//		}
+//		else {
+//			printf("-1");
+//		}
+//		
+//		
 //	}
 //
-//	//printf("\n");
-//	//for (int ii = 1; ii <= h; ii++) {
-//	//	for (int i = 1; i <= n; i++) {
-//	//		for (int j = 1; j <= m; j++) {
-//	//			printf("%d ", a[i][j][ii]);
-//	//		}
-//	//		printf("\n");
-//	//	}
-//	//	printf("\n");
-//	//}
 //
-//	//printf("\n");
-//
-//	//닿지않는곳 체킹
-//	//1 변환후 그 전에위치와 그 다음 후에 하나도 안바뀔때
 //}

@@ -18,6 +18,11 @@
 //int dy[6] = { 0,0,-1,1,0,0, };
 //int dz[6] = { 0,0,0,0,1,-1 };
 //
+//
+//int lastcnt = 1;
+//
+//int cntttt = 0;
+//
 //void bfs() {
 //	queue<dataset> myQue;
 //
@@ -57,6 +62,11 @@
 //				tmp.z = zz;
 //				tmp.cnt = cur.cnt + 1;
 //				myQue.push(tmp);
+//				lastcnt++;
+//				if (lastcnt == cntttt) {
+//					printf("%d", cur.cnt + 1);
+//					return;
+//				}
 //			}
 //		}
 //
@@ -83,12 +93,17 @@
 //			printf("\n");
 //		}
 //
-//		if (cnt == m * n * h) {
+//		/*if (cnt == m * n * h) {
 //			printf("%d", cur.cnt + 1);
 //			return;
-//		}
-//		
+//		}*/
+//	}
 //
+//	if (cntttt != lastcnt) {
+//	 // 이런 범위갯수!! 큐 다빠져나간상태에서 첨갯수와 비교해주면됨!
+//		printf("-1");
+//		return;
+//	
 //	}
 //
 //
@@ -97,7 +112,7 @@
 //
 //	scanf_s("%d %d %d",&m,&n,&h);
 //
-//	int cnt = 0;
+//
 //	for (int i = 1; i <= h; i++) {
 //		for (int j = 1; j <= n; j++) {
 //		
@@ -105,7 +120,7 @@
 //				scanf_s("%d",&dataa[j][k][i]);	
 //				if (dataa[j][k][i] == 0) {
 //					dataa[j][k][i] = 100;
-//					cnt++;
+//					cntttt++;
 //				}
 //			}
 //		}
@@ -113,7 +128,7 @@
 //
 //	bool check = false;
 //
-//	if (cnt == 0) {
+//	if (cntttt == 0) {
 //
 //		printf("0");
 //	}
@@ -132,86 +147,10 @@
 //			printf("\n");
 //		}
 //
-//		for (int i = 1; i <= h; i++) {
-//			for (int j = 1; j <= n; j++) {
-//
-//				for (int k = 1; k <= m; k++) {
-//					int cnt = 0;
-//					if (dataa[j][k][i] == 100) {
-//						
-//						/*for (int iii = 0; iii < 6; iii++) {
-//						
-//							int x = j + dx[iii];
-//							int y = k + dy[iii];
-//							int z = i + dz[iii];
-//
-//							if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
-//								cnt++;
-//							}
-//						}*/
-//						int x = j + dx[0];
-//						int y = k + dy[0];
-//						int z = i + dz[0];
-//						if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
-//							cnt++;
-//						}
-//						 x = j + dx[1];
-//						 y = k + dy[1];
-//						 z = i + dz[1];
-//						if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
-//							cnt++;
-//						}
-//						 x = j + dx[2];
-//						 y = k + dy[2];
-//						 z = i + dz[2];
-//						if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
-//							cnt++;
-//						}
-//						 x = j + dx[3];
-//						 y = k + dy[3];
-//						 z = i + dz[3];
-//						if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
-//							cnt++;
-//						}
-//						 x = j + dx[4];
-//						 y = k + dy[4];
-//						 z = i + dz[4];
-//						if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
-//							cnt++;
-//						}
-//						 x = j + dx[5];
-//						 y = k + dy[5];
-//						 z = i + dz[5];
-//						if (dataa[x][y][z] == 0 || dataa[x][y][z] == -1) {
-//							cnt++;
-//						}
-//
-//						
-//					}
-//
-//					if (cnt == 6) {
-//						
-//						check = true;
-//						break;
-//						//return;
-//					}
-//				}
-//
-//				if (check == true) {
-//					break;
-//				}
-//			}
-//			if (check == true) {
-//				break;
-//			}
-//		}
-//
-//		if (check == false) {
-//			bfs();
-//		}
-//		else {
-//			printf("-1");
-//		}
+//		
+//	    bfs();
+//	
+//	
 //		
 //		
 //	}

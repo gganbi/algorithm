@@ -477,5 +477,8 @@
     <ClCompile Include="test5-7.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="swPractice2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -238,6 +238,7 @@
     <ClCompile Include="stringPressior.cpp" />
     <ClCompile Include="swPractice1.cpp" />
     <ClCompile Include="swPractice1Cheeze.cpp" />
+    <ClCompile Include="swPractice2.cpp" />
     <ClCompile Include="swPractice2Robot.cpp" />
     <ClCompile Include="swPractice3Tomato.cpp" />
     <ClCompile Include="swPractice4SLIKARcpp.cpp" />

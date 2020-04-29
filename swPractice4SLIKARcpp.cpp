@@ -71,6 +71,7 @@
 //
 //				if (dataa[xx][yy] == '.') {
 //
+//				//	dataa[cur.x][cur.y] = '.';
 //					dataSet tmp;
 //					tmp.x = xx;
 //					tmp.y = yy;
@@ -78,14 +79,14 @@
 //
 //					dataa[xx][yy] = 'S';
 //					myQue.push(tmp);  //한번더 체킹
-//
-//				/*	for (int i = 1; i <= r; i++) {
+//					printf("\n");
+//					for (int i = 1; i <= r; i++) {
 //						for (int j = 1; j <= c; j++) {
 //							printf("%c ", dataa[i][j]);
 //						}
 //						printf("\n");
-//					}*/
-//
+//					}
+//					printf("\n");
 //					//printf("\n tmp :  %d %d\n", tmp.x, tmp.y);
 //
 //					for (int iii = 0; iii < 4; iii++) {
@@ -97,9 +98,6 @@
 //							return;
 //						}
 //					}
-//
-//
-//
 //				}
 //				else if (dataa[xx][yy] == 'D') {
 //					printf("%d", cur.cnt + 1);
@@ -123,10 +121,7 @@
 //				int xx = cur.x + dx[ii];
 //				int yy = cur.y + dy[ii];
 //
-//				if (dataa[xx][yy] == '.' || dataa[xx][yy] == 'S') {
-//
-//					
-//
+//				if (dataa[xx][yy] == '.') {
 //					dataSet tmp;
 //					tmp.x = xx;
 //					tmp.y = yy;
@@ -135,15 +130,35 @@
 //					dataa[xx][yy] = '*';
 //					check[xx][yy] = true;
 //					myQue.push(tmp);
+//				}else if (dataa[xx][yy] == 'S') {
 //
-//					/*printf("\n");
+//					//먼저 놈이 퍼지고 나서 먹어야됨
+//					for (int iii = 0; iii < 4; iii++) {
+//						int xxx = xx + dx[iii];
+//						int yyy = yy + dy[iii];
+//
+//						if (dataa[xxx][yyy] == '.') {
+//							dataa[xxx][yyy] = 'S';
+//						}
+//	
+//						dataSet tmp;
+//						tmp.x = xx;
+//						tmp.y = yy;
+//						tmp.cnt = cur.cnt + 1;
+//
+//						dataa[xx][yy] = '*';
+//						check[xx][yy] = true;
+//						myQue.push(tmp);
+//					}
+//				}
+//				printf("\n");
 //					for (int i = 1; i <= r; i++) {
 //						for (int j = 1; j <= c; j++) {
 //							printf("%c ", dataa[i][j]);
 //						}
 //						printf("\n");
-//					}*/
-//				}
+//					}printf("\n");
+//	//printf("\n tmp :  %d %d\n", tmp.x, tmp.y);
 //			}
 //		}
 //		else if (dataa[cur.x][cur.y] == 'D') {

@@ -29,7 +29,7 @@
 //	firstData.d = startD;
 //	firstData.cnt = 0; //이게 어케보면 명령횟수변수
 //
-//	dataa[startX][startY] = 1;
+//	//dataa[startX][startY] = 1;
 //
 //	queue<dataSet> myQue;
 //
@@ -46,45 +46,13 @@
 //			int yy = cur.y + dy[i];
 //
 //			
-//			 첫번째이동
+//		//	 첫번째이동
 //			dataSet next;
 //			if (dataa[xx][yy] == 0) {
-//
-//
-//				해당 위치 왔을때  도착 처리 
-//				if (xx == lastX && yy == lastY) {
-//
-//					int last = cur.cnt;
-//					if (cur.d == lastD) {
-//					}
-//					else {
-//						if (cur.d == 1 || cur.d == 2) {
-//							if (lastD == 1 || lastD == 2) {
-//								last = cur.cnt + 2;
-//							}
-//							else {
-//								last = cur.cnt + 1;
-//							}
-//						}
-//						else {
-//							if (lastD == 3 || lastD == 4) {
-//								last = cur.cnt + 2;
-//							}
-//							else {
-//								last = cur.cnt + 1;
-//							}
-//						}
-//					}
-//					last += 1; //이동시켜준명령
-//					printf("%d", last);
-//					return;
-//				}
-//
-//
-//				
+//			
 //				next.x = xx;
 //				next.y = yy;
-//				dataa[xx][yy] = 1;
+//			//	dataa[xx][yy] = 1;
 //				next.d = i;
 //
 //				if (cur.d == i) {
@@ -112,7 +80,39 @@
 //
 //				myQue.push(next);
 //
-//				2번째 가능할때
+//
+//				//	해당 위치 왔을때  도착 처리 
+//				if (xx == lastX && yy == lastY) {
+//
+//					int last = next.cnt;
+//					if (next.d == lastD) {
+//					}
+//					else {
+//						if (next.d == 1 || next.d == 2) {
+//							if (lastD == 1 || lastD == 2) {
+//								last = next.cnt + 2;
+//							}
+//							else {
+//								last = next.cnt + 1;
+//							}
+//						}
+//						else {
+//							if (lastD == 3 || lastD == 4) {
+//								last = next.cnt + 2;
+//							}
+//							else {
+//								last = next.cnt + 1;
+//							}
+//						}
+//					}
+//					printf("%d", last);
+//					return;
+//				}
+//
+//
+//				
+//
+//			//	2번째 가능할때
 //
 //				int xxx = next.x + dx[i];
 //				int yyy = next.y + dy[i];
@@ -121,37 +121,7 @@
 //				if (dataa[xxx][yyy] == 0) {
 //
 //
-//					해당 위치 왔을때  도착 처리 
-//					if (xxx == lastX && yyy == lastY) {
-//
-//						int last = cur.cnt;
-//						if (cur.d == lastD) {
-//						}
-//						else {
-//							if (cur.d == 1 || cur.d == 2) {
-//								if (lastD == 3 || lastD == 1) {
-//									last = cur.cnt + 2;
-//								}
-//								else {
-//									last = cur.cnt + 1;
-//								}
-//							}
-//							else {
-//								if (lastD == 3 || lastD == 4) {
-//									last = cur.cnt + 2;
-//								}
-//								else {
-//									last = cur.cnt + 1;
-//								}
-//							}
-//						}
-//						last += 1; //이동시켜준명령
-//						printf("%d", last);
-//						return;
-//					}
-//
-//
-//					dataa[xxx][yyy] = 1;
+//				//	dataa[xxx][yyy] = 1;
 //
 //					nextTwo.x = xxx;
 //					nextTwo.y = yyy;
@@ -160,8 +130,36 @@
 //
 //					myQue.push(nextTwo);
 //
+//					//	해당 위치 왔을때  도착 처리 
+//					if (xxx == lastX && yyy == lastY) {
 //
-//					3번째 가능할때
+//						int last = nextTwo.cnt;
+//						if (nextTwo.d == lastD) {
+//						}
+//						else {
+//							if (nextTwo.d == 1 || nextTwo.d == 2) {
+//								if (lastD == 1 || lastD == 2) {
+//									last = nextTwo.cnt + 2;
+//								}
+//								else {
+//									last = nextTwo.cnt + 1;
+//								}
+//							}
+//							else {
+//								if (lastD == 3 || lastD == 4) {
+//									last = nextTwo.cnt + 2;
+//								}
+//								else {
+//									last = nextTwo.cnt + 1;
+//								}
+//							}
+//						}
+//						printf("%d", last);
+//						return;
+//					}
+//
+//
+//				//	3번째 가능할때
 //
 //					int xxxx = nextTwo.x + dx[i];
 //					int yyyy = nextTwo.y + dy[i];
@@ -169,42 +167,42 @@
 //					dataSet nextThree;
 //					if (dataa[xxxx][yyyy] == 0) {
 //
-//						dataa[xxxx][yyyy] = 1;
+//				//		dataa[xxxx][yyyy] = 1;			
+//						nextThree.x = xxxx;
+//						nextThree.y = yyyy;
+//						nextThree.d = next.d;
+//						nextThree.cnt = nextTwo.cnt;
+//						myQue.push(nextThree);
 //
-//						해당 위치 왔을때  도착 처리 
+//
+//						//	해당 위치 왔을때  도착 처리 
 //						if (xxxx == lastX && yyyy == lastY) {
 //
-//							int last = cur.cnt;
-//							if (cur.d == lastD) {
+//							int last = nextThree.cnt;
+//							if (nextThree.d == lastD) {
 //							}
 //							else {
-//								if (cur.d == 1 || cur.d == 2) {
+//								if (nextThree.d == 1 || nextThree.d == 2) {
 //									if (lastD == 1 || lastD == 2) {
-//										last = cur.cnt + 2;
+//										last = nextThree.cnt + 2;
 //									}
 //									else {
-//										last = cur.cnt + 1;
+//										last = nextThree.cnt + 1;
 //									}
 //								}
 //								else {
 //									if (lastD == 3 || lastD == 4) {
-//										last = cur.cnt + 2;
+//										last = nextThree.cnt + 2;
 //									}
 //									else {
-//										last = cur.cnt + 1;
+//										last = nextThree.cnt + 1;
 //									}
 //								}
 //							}
-//							last += 1; //이동시켜준명령
 //							printf("%d", last);
 //							return;
 //						}
-//	
-//						nextThree.x = xxx;
-//						nextThree.y = yyy;
-//						nextThree.d = next.d;
-//						nextThree.cnt = nextTwo.cnt;
-//						myQue.push(nextThree);
+//
 //					}
 //				}
 //			}
@@ -215,7 +213,6 @@
 //		}
 //	}
 //
-//	printf("asdfdf");
 //}
 //int main() {
 //

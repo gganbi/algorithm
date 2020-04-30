@@ -242,6 +242,7 @@
     <ClCompile Include="swPractice2Robot.cpp" />
     <ClCompile Include="swPractice3.cpp" />
     <ClCompile Include="swPractice3Tomato.cpp" />
+    <ClCompile Include="swPractice4.cpp" />
     <ClCompile Include="swPractice4SLIKARcpp.cpp" />
     <ClCompile Include="swPractice5ICEBERG.cpp" />
     <ClCompile Include="temp.cpp" />

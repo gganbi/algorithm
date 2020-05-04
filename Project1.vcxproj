@@ -247,6 +247,7 @@
     <ClCompile Include="swPractice5.cpp" />
     <ClCompile Include="swPractice5ICEBERG.cpp" />
     <ClCompile Include="swPractice6.cpp" />
+    <ClCompile Include="swPractice7.cpp" />
     <ClCompile Include="temp.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="test2-1.cpp" />

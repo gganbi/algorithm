@@ -495,5 +495,11 @@
     <ClCompile Include="swPractice7.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="tobinReview.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="twoLiquidReview.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

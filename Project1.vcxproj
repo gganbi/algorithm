@@ -287,6 +287,7 @@
     <ClCompile Include="testSource.cpp" />
     <ClCompile Include="tetris.cpp" />
     <ClCompile Include="tobin.cpp" />
+    <ClCompile Include="tobinReview.cpp" />
     <ClCompile Include="top.cpp" />
     <ClCompile Include="treeDistance2.cpp" />
     <ClCompile Include="treeHigh.cpp" />
@@ -296,6 +297,7 @@
     <ClCompile Include="twoGraphBfs.cpp" />
     <ClCompile Include="twoGraphDfs.cpp" />
     <ClCompile Include="twoLiquid.cpp" />
+    <ClCompile Include="twoLiquidReview.cpp" />
     <ClCompile Include="warmBirusBfs.cpp" />
     <ClCompile Include="warmBirusDfs.cpp" />
   </ItemGroup>

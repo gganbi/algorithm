@@ -501,5 +501,11 @@
     <ClCompile Include="twoLiquidReview.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="divisionReview.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="swPractice8.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -175,6 +175,7 @@
     <ClCompile Include="diseaseBfs.cpp" />
     <ClCompile Include="divideAndConquer.cpp" />
     <ClCompile Include="division.cpp" />
+    <ClCompile Include="divisionReview.cpp" />
     <ClCompile Include="dynamicAlgorithm.cpp" />
     <ClCompile Include="eightnine.cpp" />
     <ClCompile Include="examTest1.cpp" />
@@ -248,6 +249,7 @@
     <ClCompile Include="swPractice5ICEBERG.cpp" />
     <ClCompile Include="swPractice6.cpp" />
     <ClCompile Include="swPractice7.cpp" />
+    <ClCompile Include="swPractice8.cpp" />
     <ClCompile Include="temp.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="test2-1.cpp" />

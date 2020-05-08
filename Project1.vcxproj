@@ -169,6 +169,7 @@
     <ClCompile Include="cource3macofarr.cpp" />
     <ClCompile Include="course3Aattackrange.cpp" />
     <ClCompile Include="dessert.cpp" />
+    <ClCompile Include="dessertReview.cpp" />
     <ClCompile Include="dfs.cpp" />
     <ClCompile Include="dfsAndBfs.cpp" />
     <ClCompile Include="diceGame.cpp" />
@@ -250,6 +251,7 @@
     <ClCompile Include="swPractice6.cpp" />
     <ClCompile Include="swPractice7.cpp" />
     <ClCompile Include="swPractice8.cpp" />
+    <ClCompile Include="swPractice9.cpp" />
     <ClCompile Include="temp.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="test2-1.cpp" />
@@ -295,6 +297,7 @@
     <ClCompile Include="treeHigh.cpp" />
     <ClCompile Include="treesDistance.cpp" />
     <ClCompile Include="treeSlice.cpp" />
+    <ClCompile Include="treeSliceReview.cpp" />
     <ClCompile Include="twoDimensionLargeMove.cpp" />
     <ClCompile Include="twoGraphBfs.cpp" />
     <ClCompile Include="twoGraphDfs.cpp" />

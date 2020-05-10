@@ -1,46 +1,20 @@
-//#include<stdio.h>
-//
-//
-//int n, r;
-//
-//
-//char result[100];
-//bool check[100];
-//
-//
-//void dd(int x) {
-//
-//	if (x >= r) {
-//		printf("%s\n", result);	
-//	
-//	}
-//	else {
-//		for (int i = 0; i < 4; i++) {
-//		
-//			
-//				result[x] = 'a'+i;
-//
-//				dd(x + 1);
-//
-//				result[x] = ' ';
-//			
-//
-//
-//		}
-//	
-//	}
-//	
-//}
-//
-//
-//
+//#include<cstdio>
+//#include<stack>
+//#include<stdlib.h>
+//#include<algorithm>
+//using namespace std;
 //
 //
 //int main() {
 //
-//	scanf_s("%d %d", &n, &r);
-//	dd(0);
+//	//scanf_s("%s",&dataa,100);
+//	int dataa[5] = { 5,3,4,2,1 };
 //
+//	sort(dataa, dataa+3);
 //
+//	for (int i = 0; i < 3; i++) {
+//		printf("%d", dataa[i]);
+//	}
+//	
 //
 //}

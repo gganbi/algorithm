@@ -141,6 +141,7 @@
     <ClCompile Include="2chsicDap.cpp" />
     <ClCompile Include="2colorMake.cpp" />
     <ClCompile Include="2colorMakeBfs.cpp" />
+    <ClCompile Include="2colorMakeBfsReview.cpp" />
     <ClCompile Include="Adjacent list.cpp" />
     <ClCompile Include="Adjacent matrix .cpp" />
     <ClCompile Include="airFresh.cpp" />
@@ -204,6 +205,7 @@
     <ClCompile Include="moveAlgorithm4.cpp" />
     <ClCompile Include="nextnum.cpp" />
     <ClCompile Include="nnDan.cpp" />
+    <ClCompile Include="nnDanReviewcpp.cpp" />
     <ClCompile Include="numberAttack.cpp" />
     <ClCompile Include="numberAttackBfs.cpp" />
     <ClCompile Include="numberBox.cpp" />
@@ -238,6 +240,7 @@
     <ClCompile Include="stringMinus.cpp" />
     <ClCompile Include="stringMultiple.cpp" />
     <ClCompile Include="stringPressior.cpp" />
+    <ClCompile Include="swPactice10.cpp" />
     <ClCompile Include="swPractice1.cpp" />
     <ClCompile Include="swPractice1Cheeze.cpp" />
     <ClCompile Include="swPractice2.cpp" />
@@ -254,6 +257,7 @@
     <ClCompile Include="swPractice9.cpp" />
     <ClCompile Include="temp.cpp" />
     <ClCompile Include="test.cpp" />
+    <ClCompile Include="test11.cpp" />
     <ClCompile Include="test2-1.cpp" />
     <ClCompile Include="test2-2.cpp" />
     <ClCompile Include="test2-3.cpp" />
@@ -262,6 +266,7 @@
     <ClCompile Include="test2-7.cpp" />
     <ClCompile Include="test2-8.cpp" />
     <ClCompile Include="test2.cpp" />
+    <ClCompile Include="test22.cpp" />
     <ClCompile Include="test2_5.cpp" />
     <ClCompile Include="test3-1cpp.cpp" />
     <ClCompile Include="test3-2.cpp" />
@@ -270,6 +275,7 @@
     <ClCompile Include="test3-5.cpp" />
     <ClCompile Include="test3-6.cpp" />
     <ClCompile Include="test3.cpp" />
+    <ClCompile Include="test33.cpp" />
     <ClCompile Include="test4-1.cpp" />
     <ClCompile Include="test4-2.cpp" />
     <ClCompile Include="test4-3.cpp" />

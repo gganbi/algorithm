@@ -224,6 +224,7 @@
     <ClCompile Include="represttValue.cpp" />
     <ClCompile Include="seat.cpp" />
     <ClCompile Include="sectionUnion.cpp" />
+    <ClCompile Include="sectionUnionReview.cpp" />
     <ClCompile Include="soonyal.cpp" />
     <ClCompile Include="stack.cpp" />
     <ClCompile Include="stackParenthesis.cpp" />
@@ -305,6 +306,7 @@
     <ClCompile Include="treeSlice.cpp" />
     <ClCompile Include="treeSliceReview.cpp" />
     <ClCompile Include="twoDimensionLargeMove.cpp" />
+    <ClCompile Include="twoGraph.cpp" />
     <ClCompile Include="twoGraphBfs.cpp" />
     <ClCompile Include="twoGraphDfs.cpp" />
     <ClCompile Include="twoLiquid.cpp" />

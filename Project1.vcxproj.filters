@@ -567,5 +567,14 @@
     <ClCompile Include="strignPressiorReview.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="baseballgameReview.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="seatReveiw.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stringMultipleReveiw.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

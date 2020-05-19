@@ -1,8 +1,2 @@
-﻿  swPractice4SLIKARcpp.cpp
-C:\Users\김성민\source\repos\Test\Project1\swPractice4SLIKARcpp.cpp(147,12): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
-C:\Users\김성민\source\repos\Test\Project1\swPractice4SLIKARcpp.cpp(147,12): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
-C:\Users\김성민\source\repos\Test\Project1\swPractice4SLIKARcpp.cpp(147,12): message : 누락된 variadic 인수 2이(가) 서식 문자열 '%c'에 필요합니다.
-C:\Users\김성민\source\repos\Test\Project1\swPractice4SLIKARcpp.cpp(147,12): message : 이 인수는 버퍼 크기로 사용됩니다.
-  test.cpp
-  코드를 생성하고 있습니다...
+﻿  robotReview.cpp
   Project1.vcxproj -> C:\Users\김성민\source\repos\Test\Debug\Project1.exe

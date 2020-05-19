@@ -576,5 +576,11 @@
     <ClCompile Include="stringMultipleReveiw.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="robotReview.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="kakaoKey.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

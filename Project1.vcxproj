@@ -197,6 +197,7 @@
     <ClCompile Include="goodseq.cpp" />
     <ClCompile Include="habbungSort.cpp" />
     <ClCompile Include="inequal.cpp" />
+    <ClCompile Include="kakaoKey.cpp" />
     <ClCompile Include="level3Box.cpp" />
     <ClCompile Include="level3BoxMaing.cpp" />
     <ClCompile Include="lever3car.cpp" />
@@ -230,6 +231,7 @@
     <ClCompile Include="quickSort.cpp" />
     <ClCompile Include="rectangle.cpp" />
     <ClCompile Include="represttValue.cpp" />
+    <ClCompile Include="robotReview.cpp" />
     <ClCompile Include="seat.cpp" />
     <ClCompile Include="seatReveiw.cpp" />
     <ClCompile Include="sectionUnion.cpp" />

@@ -1,86 +1,49 @@
-//#include <cstdio>
-//#include<vector>
-//#include<queue>
+//#include <string>
+//#include <vector>
+//#include <iostream>
+//
 //using namespace std;
 //
+////1부터 케이스까지
 //
-//struct dataSet {
+////n-i+1
+//// 1 2 3 4 5 6 7 8
+//// 각 케이스에 문자열 개새수구해서 빼주기
 //
-//	int x;
-//	int y;
-//	int cnt;
-//	int value;
+//int indexCnt = 0;
+//int temp[1001] = { 0, };
+//void dd(int length,string s) {
 //
-//};
+//    for (int i = 0; i <= s.length - length * 2; i++) {
 //
-//char dataa[20][20] = { 0, };
-//int tmp[20][20] = { 0, };
-//
-//int p[10] = { 0, };
-//int s[10] = { 0, };
-//
-//int dx[4] = { -1,1,0,0 };
-//int dy[4] = { 0,0,-1,1 };
-//
-//int n, m, k;
-//
-//void bfs() {
-//
-//	queue<dataSet> myQue;
-//	scanf_s("%d %d %d", &n, &m, &k);
-//
-//	for (int i = 1; i <= k; i++) {
-//		scanf_s("%d %d", &p[i], &s[i]);
-//	}
-//
-//	int customerCnt = 1;
-//	for (int i = 1; i <= n; i++) {
-//		for (int j = 1; j <= m; j++) {
-//			scanf_s("%c", &dataa[i][j]);
-//			if (dataa[i][j] == '1') {
-//				dataSet customer;
-//				customer.x = i;
-//				customer.y = j;
-//				customer.cnt = 0;
-//				customer.value = customerCnt;
-//				tmp[i][j] = customerCnt++;
-//				myQue.push(customer);
-//			}
-//			else if (dataa[i][j] != '0') {
-//				tmp[i][j] = 100;
-//			}
-//		}
-//	}
-//
-//	while (!myQue.empty()) {
-//	
-//		dataSet cur = myQue.front();
-//		myQue.pop();
-//
-//		for (int i = 0; i < 4; i++) {
-//		
-//			int xx = cur.x + dx[i];
-//			int yy = cur.y + dy[i];
-//
-//			if ((xx >= 1 && xx <= n) && (yy >= 1 && yy <= m)) {
-//				if (tmp[xx][yy] != cur.cnt) {
-//					tmp[cur.x][cur.y] = cur.value;
-//				}
-//			}
-//
-//		
-//		}
-//
-//	}
-//	
+//        int tmpCnt = 0;
+//        for (int j = 1; j <= length; j++) {
+//            if (s[i+j-1] == s[i + length+j-1]) {
+//                tmpCnt++;
+//            }
+//        }
+//    
+//    }
 //
 //
+//}
+//
+//int solution(string s) {
+//    int answer = 0;
+//
+//    int max = s.length / 2;
+//    
+//    for (int i = 1; i <= max; i++) {
+//        dd(i,s);
+//    }
+//    cout << s[2];
+//    return answer;
 //}
 //
 //
 //int main() {
 //
-//	bfs();
+//
 //
 //
 //}

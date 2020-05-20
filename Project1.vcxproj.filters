@@ -582,5 +582,11 @@
     <ClCompile Include="kakaoKey.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="kakao2019First.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="kakako2019-2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

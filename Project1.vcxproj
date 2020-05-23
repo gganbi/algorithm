@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2018kakao_1.cpp" />
     <ClCompile Include="2chsicDap.cpp" />
     <ClCompile Include="2colorMake.cpp" />
     <ClCompile Include="2colorMakeBfs.cpp" />
